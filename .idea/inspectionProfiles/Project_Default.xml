@@ -1,0 +1,139 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0">
+    <option name="myName" value="Project Default" />
+    <inspection_tool class="DuplicatedCode" enabled="false" level="WEAK WARNING" enabled_by_default="false" />
+    <inspection_tool class="EditorConfigCharClassLetterRedundancy" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="EditorConfigCharClassRedundancy" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="EditorConfigDeprecatedDescriptor" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="EditorConfigEmptyHeader" enabled="false" level="ERROR" enabled_by_default="false" />
+    <inspection_tool class="EditorConfigEmptySection" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="EditorConfigEncoding" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="EditorConfigHeaderUniqueness" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="EditorConfigKeyCorrectness" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="EditorConfigListAcceptability" enabled="false" level="ERROR" enabled_by_default="false" />
+    <inspection_tool class="EditorConfigMissingRequiredDeclaration" enabled="false" level="ERROR" enabled_by_default="false" />
+    <inspection_tool class="EditorConfigNoMatchingFiles" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="EditorConfigNumerousWildcards" enabled="false" level="WEAK WARNING" enabled_by_default="false" />
+    <inspection_tool class="EditorConfigOptionRedundancy" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="EditorConfigPairAcceptability" enabled="false" level="ERROR" enabled_by_default="false" />
+    <inspection_tool class="EditorConfigPartialOverride" enabled="false" level="WEAK WARNING" enabled_by_default="false" />
+    <inspection_tool class="EditorConfigPatternEnumerationRedundancy" enabled="false" level="ERROR" enabled_by_default="false" />
+    <inspection_tool class="EditorConfigPatternRedundancy" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="EditorConfigReferenceCorrectness" enabled="false" level="ERROR" enabled_by_default="false" />
+    <inspection_tool class="EditorConfigRootDeclarationCorrectness" enabled="false" level="ERROR" enabled_by_default="false" />
+    <inspection_tool class="EditorConfigRootDeclarationUniqueness" enabled="false" level="ERROR" enabled_by_default="false" />
+    <inspection_tool class="EditorConfigShadowedOption" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="EditorConfigShadowingOption" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="EditorConfigSpaceInHeader" enabled="false" level="WEAK WARNING" enabled_by_default="false" />
+    <inspection_tool class="EditorConfigUnexpectedComma" enabled="false" level="ERROR" enabled_by_default="false" />
+    <inspection_tool class="EditorConfigUnusedDeclaration" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="EditorConfigValueCorrectness" enabled="false" level="ERROR" enabled_by_default="false" />
+    <inspection_tool class="EditorConfigValueUniqueness" enabled="false" level="ERROR" enabled_by_default="false" />
+    <inspection_tool class="EditorConfigWildcardRedundancy" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="GrazieInspection" enabled="false" level="GRAMMAR_ERROR" enabled_by_default="false" />
+    <inspection_tool class="InjectedReferences" enabled="false" level="ERROR" enabled_by_default="false" />
+    <inspection_tool class="LanguageDetectionInspection" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="PyAugmentAssignmentInspection" enabled="true" level="WEAK WARNING" enabled_by_default="true" />
+    <inspection_tool class="PyInterpreterInspection" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="PyMethodOverridingInspection" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="PyPackageRequirementsInspection" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ignoredPackages">
+        <value>
+          <list size="64">
+            <item index="0" class="java.lang.String" itemvalue="altgraph" />
+            <item index="1" class="java.lang.String" itemvalue="httpx" />
+            <item index="2" class="java.lang.String" itemvalue="bs4" />
+            <item index="3" class="java.lang.String" itemvalue="colorlog" />
+            <item index="4" class="java.lang.String" itemvalue="yarg" />
+            <item index="5" class="java.lang.String" itemvalue="PyYAML" />
+            <item index="6" class="java.lang.String" itemvalue="python-dateutil" />
+            <item index="7" class="java.lang.String" itemvalue="h11" />
+            <item index="8" class="java.lang.String" itemvalue="PyQt5-sip" />
+            <item index="9" class="java.lang.String" itemvalue="cycler" />
+            <item index="10" class="java.lang.String" itemvalue="DateTime" />
+            <item index="11" class="java.lang.String" itemvalue="PyQt5-Qt5" />
+            <item index="12" class="java.lang.String" itemvalue="docopt" />
+            <item index="13" class="java.lang.String" itemvalue="filelock" />
+            <item index="14" class="java.lang.String" itemvalue="PyQt6" />
+            <item index="15" class="java.lang.String" itemvalue="backports.zoneinfo" />
+            <item index="16" class="java.lang.String" itemvalue="PyQt5" />
+            <item index="17" class="java.lang.String" itemvalue="certifi" />
+            <item index="18" class="java.lang.String" itemvalue="anyio" />
+            <item index="19" class="java.lang.String" itemvalue="astropy" />
+            <item index="20" class="java.lang.String" itemvalue="soupsieve" />
+            <item index="21" class="java.lang.String" itemvalue="pyparsing" />
+            <item index="22" class="java.lang.String" itemvalue="beautifulsoup4" />
+            <item index="23" class="java.lang.String" itemvalue="iniconfig" />
+            <item index="24" class="java.lang.String" itemvalue="astroplan" />
+            <item index="25" class="java.lang.String" itemvalue="kiwisolver" />
+            <item index="26" class="java.lang.String" itemvalue="zope.interface" />
+            <item index="27" class="java.lang.String" itemvalue="contourpy" />
+            <item index="28" class="java.lang.String" itemvalue="pefile" />
+            <item index="29" class="java.lang.String" itemvalue="pyinstaller-hooks-contrib" />
+            <item index="30" class="java.lang.String" itemvalue="fonttools" />
+            <item index="31" class="java.lang.String" itemvalue="platformdirs" />
+            <item index="32" class="java.lang.String" itemvalue="matplotlib" />
+            <item index="33" class="java.lang.String" itemvalue="virtualenv" />
+            <item index="34" class="java.lang.String" itemvalue="charset-normalizer" />
+            <item index="35" class="java.lang.String" itemvalue="distlib" />
+            <item index="36" class="java.lang.String" itemvalue="PyQt6-Qt6" />
+            <item index="37" class="java.lang.String" itemvalue="PyQt6-sip" />
+            <item index="38" class="java.lang.String" itemvalue="httpcore" />
+            <item index="39" class="java.lang.String" itemvalue="idna" />
+            <item index="40" class="java.lang.String" itemvalue="pyerfa" />
+            <item index="41" class="java.lang.String" itemvalue="pluggy" />
+            <item index="42" class="java.lang.String" itemvalue="astral" />
+            <item index="43" class="java.lang.String" itemvalue="numpy" />
+            <item index="44" class="java.lang.String" itemvalue="requests" />
+            <item index="45" class="java.lang.String" itemvalue="sniffio" />
+            <item index="46" class="java.lang.String" itemvalue="exceptiongroup" />
+            <item index="47" class="java.lang.String" itemvalue="seaborn" />
+            <item index="48" class="java.lang.String" itemvalue="zipp" />
+            <item index="49" class="java.lang.String" itemvalue="pywin32-ctypes" />
+            <item index="50" class="java.lang.String" itemvalue="tomli" />
+            <item index="51" class="java.lang.String" itemvalue="urllib3" />
+            <item index="52" class="java.lang.String" itemvalue="pyinstaller" />
+            <item index="53" class="java.lang.String" itemvalue="six" />
+            <item index="54" class="java.lang.String" itemvalue="pytest" />
+            <item index="55" class="java.lang.String" itemvalue="tzdata" />
+            <item index="56" class="java.lang.String" itemvalue="packaging" />
+            <item index="57" class="java.lang.String" itemvalue="pipreqs" />
+            <item index="58" class="java.lang.String" itemvalue="pandas" />
+            <item index="59" class="java.lang.String" itemvalue="importlib-resources" />
+            <item index="60" class="java.lang.String" itemvalue="asyncio" />
+            <item index="61" class="java.lang.String" itemvalue="colorama" />
+            <item index="62" class="java.lang.String" itemvalue="pytz" />
+            <item index="63" class="java.lang.String" itemvalue="Pillow" />
+          </list>
+        </value>
+      </option>
+    </inspection_tool>
+    <inspection_tool class="PyPep8Inspection" enabled="true" level="WEAK WARNING" enabled_by_default="true">
+      <option name="ignoredErrors">
+        <list>
+          <option value="E501" />
+          <option value="E401" />
+        </list>
+      </option>
+    </inspection_tool>
+    <inspection_tool class="PyPep8NamingInspection" enabled="false" level="WEAK WARNING" enabled_by_default="false">
+      <option name="ignoredErrors">
+        <list>
+          <option value="N806" />
+          <option value="N802" />
+        </list>
+      </option>
+    </inspection_tool>
+    <inspection_tool class="PyUnusedLocalInspection" enabled="true" level="WARNING" enabled_by_default="true" editorAttributes="WARNING_ATTRIBUTES" />
+    <inspection_tool class="Pylint" enabled="false" level="ERROR" enabled_by_default="false" editorAttributes="ERRORS_ATTRIBUTES" />
+    <inspection_tool class="ReassignedToPlainText" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="RedundantSuppression" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="RegExpAnonymousGroup" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="SpellCheckingInspection" enabled="false" level="TYPO" enabled_by_default="false">
+      <option name="processCode" value="true" />
+      <option name="processLiterals" value="true" />
+      <option name="processComments" value="true" />
+    </inspection_tool>
+    <inspection_tool class="UnusedDefine" enabled="true" level="WARNING" enabled_by_default="true" />
+  </profile>
+</component>
