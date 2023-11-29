@@ -1,10 +1,9 @@
-<<<<<<< Updated upstream
 *.gif
 venv
-=======
 *png
 *gif
 venv/**
 *csv
 .DS_store
->>>>>>> Stashed changes
+.venv
+*fits

@@ -117,3 +117,5 @@ webcolors
 webencodings
 websocket-client
 widgetsnbextension
+photutils
+astrometry
