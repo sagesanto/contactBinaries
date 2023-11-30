@@ -1,0 +1,37 @@
+ParameterSet: 34 parameters
+      t0_supconj@binary@component: 0.17186338505096585 d
+       teffratio@binary@component: 0.8909880474086537
+            incl@binary@component: 47.71392433455592 deg
+C  fillout_factor@contact_enve...: 0.7724816865901626
+               q@binary@component: 2.698299229809535
+C     t0_perpass@binary@component: 0.08586868505096586 d
+C         t0_ref@binary@component: 0.17186338505096585 d
+C     compute_phases@lc01@dataset: []
+C     compute_times@orb01@dataset: [0.17186339 0.17530317 0.17874296 ...
+ 0.50896261 0.5124024  0.51584219] d
+C    compute_times@mesh01@dataset: [0.17186339 0.17874296 0.18562254 ...
+ 0.50208303 0.50896261 0.51584219] d
+C        teff@secondary@component: 5116.05336822049 K
+C          asini@binary@component: 2.5460920642359883 solRad
+C         asini@primary@component: 1.8576426159832267 solRad
+C          incl@primary@component: 47.71392433455592 deg
+C       asini@secondary@component: 0.6884494482527618 solRad
+C        incl@secondary@component: 47.71392433455592 deg
+   pot@contact_envelope@component: 5.73949918609382
+C      requiv@secondary@component: 1.7890859427233632 solRad
+C  pot_min@contact_envelope@co...: 5.599832123452577
+C  pot_max@contact_envelope@co...: 6.213703862162487
+C           sma@primary@component: 2.5110247287680116 solRad
+C    requiv_max@primary@component: 1.2878148811240269 solRad
+C    requiv_min@primary@component: 1.0207385149456365 solRad
+C        mass@secondary@component: 3.3728740372619184 solMass
+C         sma@secondary@component: 0.9305953546691177 solRad
+C  requiv_max@secondary@component: 1.8479508154078497 solRad
+C  requiv_min@secondary@component: 1.6140011146411506 solRad
+C            sma@binary@component: 3.441620083437129 solRad
+C        requiv@primary@component: 1.2141331823563364 solRad
+C      mean_anom@binary@component: 270.1318886307796 deg
+C        logg@secondary@component: 4.460805347935928
+C    requivratio@binary@component: 1.473549993297427
+C  requivsumfrac@binary@component: 0.872617852136776
+C          logg@primary@component: 4.366444988122265

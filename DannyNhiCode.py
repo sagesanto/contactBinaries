@@ -21,6 +21,10 @@ MJD = ts['time'].mjd
 MJD = MJD - MJD[0]   # set MJD start from 0 for t0 argument
 MJD = MJD % 0.3439788   # fold time into delta time
 
+print(MJD)
+print(type(MJD[0]))
+
+
 fluxes = 10**(-ts['diff_mag']/2.5 + 10)
 
 # %%
@@ -108,10 +112,10 @@ b.plot('mesh01', fc='teffs', ec='None', fcmap='viridis', animate=True, save='./c
 b.add_solver('optimizer.nelder_mead', 
             fit_parameters=['teffratio', 'incl@binary', 'q', 'per0'], solver='nm_solver')
 b.run_solver('nm_solver', maxiter=10000, solution='nm_sol')
-print(b.adopt_solution('nm_sol', trial_run=True)
+print(b.adopt_solution('nm_sol', trial_run=True))
 
 # %%
-print(b.adopt_solution('nm_sol')
+print(b.adopt_solution('nm_sol'))
 b.run_compute(compute='fastcompute', model='after_nm')
 
 # %%
