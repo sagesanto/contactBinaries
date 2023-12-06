@@ -1,0 +1,480 @@
+context: system
+	By 'qualifier' with possible values: t0, ra, dec, distance, vgamma, ebv, Av, Rv, hierarchy
+		t0@system: Time at which all values are provided.  For values with time-derivatives, this defines their zero-point.
+		ra@system: Right ascension
+		dec@system: Declination
+		distance@system: Distance to the system
+		vgamma@system: Constant barycentric systemic velocity (in the direction of positive RV or negative vz)
+		ebv@system: Extinction E(B-V)
+		Av@system: Extinction Av
+		Rv@system: Extinction law parameter
+		hierarchy@system: Hierarchy representation
+context: component
+	By 'kind' with possible values: star, orbit, envelope
+		requiv@star@component: Equivalent radius
+		requiv_max@star@component: Critical (maximum) value of the equivalent radius for the given morphology
+		requiv_min@star@component: Critical (minimum) value of the equivalent radius for the given morphology
+		teff@star@component: Mean effective temperature
+		logg@star@component: logg at requiv
+		syncpar@star@component: Synchronicity parameter
+		period@star@component: Rotation period (wrt the sky)
+		freq@star@component: Rotation frequency (wrt the sky)
+		gravb_bol@star@component: Bolometric gravity brightening
+		irrad_frac_refl_bol@star@component: ratio of incident bolometric light that is used for reflection/irradiation (heating without redistribution)
+		irrad_frac_lost_bol@star@component: ratio of incident bolometric light that is lost/ignored
+		ld_mode_bol@star@component: Mode to use for bolometric limb-darkening (used only for irradiation).
+		ld_func_bol@star@component: Bolometric limb darkening model (used only for irradiation).
+		ld_coeffs_source_bol@star@component: Source for bolometric limb darkening coefficients (used only for irradiation; 'auto' to interpolate from the applicable table according to the 'atm' parameter, or the name of a specific atmosphere table)
+		mass@star@component: Mass
+		sma@star@component: Semi major axis of the component in the orbit
+		asini@star@component: Projected semi major axis of the component in the orbit
+		period@orbit@component: Orbital period (defined at t0@system, sidereal: wrt the sky)
+		freq@orbit@component: Orbital frequency (sidereal)
+		dpdt@orbit@component: Time derivative of orbital period (anomalistic), where period is defined at t0@system
+		per0@orbit@component: Argument of periastron (defined at time t0@system)
+		dperdt@orbit@component: Time derivative of argument of periastron, where per0 is defined at t0@system
+		ecc@orbit@component: Eccentricity
+		t0_perpass@orbit@component: Zeropoint date at periastron passage of the primary component
+		t0_supconj@orbit@component: Zeropoint date at superior conjunction of the primary component
+		t0_ref@orbit@component: Zeropoint date at reference point for the primary component
+		mean_anom@orbit@component: Mean anomaly at t0@system
+		incl@orbit@component: Orbital inclination angle
+		q@orbit@component: Mass ratio
+		sma@orbit@component: Semi-major axis of the orbit (defined at time t0@system)
+		long_an@orbit@component: Longitude of the ascending node
+		asini@orbit@component: Projected semi major axis
+		ecosw@orbit@component: Eccentricity times cos of argument of periastron
+		esinw@orbit@component: Eccentricity times sin of argument of periastron
+		teffratio@orbit@component: ratio between effective temperatures of children stars
+		requivratio@orbit@component: ratio between equivalent radii of children stars
+		requivsumfrac@orbit@component: sum of fractional equivalent radii of children stars
+		abun@envelope@component: Abundance/Metallicity
+		fillout_factor@envelope@component: Fillout-factor of the envelope
+		pot@envelope@component: Potential of the envelope (from the primary component's reference)
+		pot_min@envelope@component: Critical (minimum) value of the potential to remain a contact
+		pot_max@envelope@component: Critical (maximum) value of the potential to remain a contact
+	By 'component' with possible values: primary, secondary, binary, contact_envelope
+		requiv@primary@component: Equivalent radius
+		requiv_max@primary@component: Critical (maximum) value of the equivalent radius for the given morphology
+		requiv_min@primary@component: Critical (minimum) value of the equivalent radius for the given morphology
+		teff@primary@component: Mean effective temperature
+		logg@primary@component: logg at requiv
+		syncpar@primary@component: Synchronicity parameter
+		period@primary@component: Rotation period (wrt the sky)
+		freq@primary@component: Rotation frequency (wrt the sky)
+		gravb_bol@primary@component: Bolometric gravity brightening
+		irrad_frac_refl_bol@primary@component: ratio of incident bolometric light that is used for reflection/irradiation (heating without redistribution)
+		irrad_frac_lost_bol@primary@component: ratio of incident bolometric light that is lost/ignored
+		ld_mode_bol@primary@component: Mode to use for bolometric limb-darkening (used only for irradiation).
+		ld_func_bol@primary@component: Bolometric limb darkening model (used only for irradiation).
+		ld_coeffs_source_bol@primary@component: Source for bolometric limb darkening coefficients (used only for irradiation; 'auto' to interpolate from the applicable table according to the 'atm' parameter, or the name of a specific atmosphere table)
+		mass@primary@component: Mass
+		sma@primary@component: Semi major axis of the component in the orbit
+		asini@primary@component: Projected semi major axis of the component in the orbit
+		requiv@secondary@component: Equivalent radius
+		requiv_max@secondary@component: Critical (maximum) value of the equivalent radius for the given morphology
+		requiv_min@secondary@component: Critical (minimum) value of the equivalent radius for the given morphology
+		teff@secondary@component: Mean effective temperature
+		logg@secondary@component: logg at requiv
+		syncpar@secondary@component: Synchronicity parameter
+		period@secondary@component: Rotation period (wrt the sky)
+		freq@secondary@component: Rotation frequency (wrt the sky)
+		gravb_bol@secondary@component: Bolometric gravity brightening
+		irrad_frac_refl_bol@secondary@component: ratio of incident bolometric light that is used for reflection/irradiation (heating without redistribution)
+		irrad_frac_lost_bol@secondary@component: ratio of incident bolometric light that is lost/ignored
+		ld_mode_bol@secondary@component: Mode to use for bolometric limb-darkening (used only for irradiation).
+		ld_func_bol@secondary@component: Bolometric limb darkening model (used only for irradiation).
+		ld_coeffs_source_bol@secondary@component: Source for bolometric limb darkening coefficients (used only for irradiation; 'auto' to interpolate from the applicable table according to the 'atm' parameter, or the name of a specific atmosphere table)
+		mass@secondary@component: Mass
+		sma@secondary@component: Semi major axis of the component in the orbit
+		asini@secondary@component: Projected semi major axis of the component in the orbit
+		period@binary@component: Orbital period (defined at t0@system, sidereal: wrt the sky)
+		freq@binary@component: Orbital frequency (sidereal)
+		dpdt@binary@component: Time derivative of orbital period (anomalistic), where period is defined at t0@system
+		per0@binary@component: Argument of periastron (defined at time t0@system)
+		dperdt@binary@component: Time derivative of argument of periastron, where per0 is defined at t0@system
+		ecc@binary@component: Eccentricity
+		t0_perpass@binary@component: Zeropoint date at periastron passage of the primary component
+		t0_supconj@binary@component: Zeropoint date at superior conjunction of the primary component
+		t0_ref@binary@component: Zeropoint date at reference point for the primary component
+		mean_anom@binary@component: Mean anomaly at t0@system
+		incl@binary@component: Orbital inclination angle
+		q@binary@component: Mass ratio
+		sma@binary@component: Semi-major axis of the orbit (defined at time t0@system)
+		long_an@binary@component: Longitude of the ascending node
+		asini@binary@component: Projected semi major axis
+		ecosw@binary@component: Eccentricity times cos of argument of periastron
+		esinw@binary@component: Eccentricity times sin of argument of periastron
+		teffratio@binary@component: ratio between effective temperatures of children stars
+		requivratio@binary@component: ratio between equivalent radii of children stars
+		requivsumfrac@binary@component: sum of fractional equivalent radii of children stars
+		abun@contact_envelope@component: Abundance/Metallicity
+		fillout_factor@contact_envelope@component: Fillout-factor of the envelope
+		pot@contact_envelope@component: Potential of the envelope (from the primary component's reference)
+		pot_min@contact_envelope@component: Critical (minimum) value of the potential to remain a contact
+		pot_max@contact_envelope@component: Critical (maximum) value of the potential to remain a contact
+	By 'qualifier' with possible values: requiv, requiv_max, requiv_min, teff, logg, syncpar, period, freq, gravb_bol, irrad_frac_refl_bol, irrad_frac_lost_bol, ld_mode_bol, ld_func_bol, ld_coeffs_source_bol, mass, dpdt, per0, dperdt, ecc, t0_perpass, t0_supconj, t0_ref, mean_anom, incl, q, sma, long_an, asini, ecosw, esinw, abun, fillout_factor, pot, pot_min, pot_max, teffratio, requivratio, requivsumfrac
+		requiv@component: Equivalent radius
+		requiv_max@component: Critical (maximum) value of the equivalent radius for the given morphology
+		requiv_min@component: Critical (minimum) value of the equivalent radius for the given morphology
+		teff@component: Mean effective temperature
+		logg@component: logg at requiv
+		syncpar@component: Synchronicity parameter
+		period@component: Rotation period (wrt the sky)
+		period@component: Orbital period (defined at t0@system, sidereal: wrt the sky)
+		freq@component: Rotation frequency (wrt the sky)
+		freq@component: Orbital frequency (sidereal)
+		gravb_bol@component: Bolometric gravity brightening
+		irrad_frac_refl_bol@component: ratio of incident bolometric light that is used for reflection/irradiation (heating without redistribution)
+		irrad_frac_lost_bol@component: ratio of incident bolometric light that is lost/ignored
+		ld_mode_bol@component: Mode to use for bolometric limb-darkening (used only for irradiation).
+		ld_func_bol@component: Bolometric limb darkening model (used only for irradiation).
+		ld_coeffs_source_bol@component: Source for bolometric limb darkening coefficients (used only for irradiation; 'auto' to interpolate from the applicable table according to the 'atm' parameter, or the name of a specific atmosphere table)
+		mass@component: Mass
+		dpdt@component: Time derivative of orbital period (anomalistic), where period is defined at t0@system
+		per0@component: Argument of periastron (defined at time t0@system)
+		dperdt@component: Time derivative of argument of periastron, where per0 is defined at t0@system
+		ecc@component: Eccentricity
+		t0_perpass@component: Zeropoint date at periastron passage of the primary component
+		t0_supconj@component: Zeropoint date at superior conjunction of the primary component
+		t0_ref@component: Zeropoint date at reference point for the primary component
+		mean_anom@component: Mean anomaly at t0@system
+		incl@component: Orbital inclination angle
+		q@component: Mass ratio
+		sma@component: Semi-major axis of the orbit (defined at time t0@system)
+		sma@component: Semi major axis of the component in the orbit
+		long_an@component: Longitude of the ascending node
+		asini@component: Projected semi major axis
+		asini@component: Projected semi major axis of the component in the orbit
+		ecosw@component: Eccentricity times cos of argument of periastron
+		esinw@component: Eccentricity times sin of argument of periastron
+		abun@component: Abundance/Metallicity
+		fillout_factor@component: Fillout-factor of the envelope
+		pot@component: Potential of the envelope (from the primary component's reference)
+		pot_min@component: Critical (minimum) value of the potential to remain a contact
+		pot_max@component: Critical (maximum) value of the potential to remain a contact
+		teffratio@component: ratio between effective temperatures of children stars
+		requivratio@component: ratio between equivalent radii of children stars
+		requivsumfrac@component: sum of fractional equivalent radii of children stars
+context: constraint
+	By 'kind' with possible values: extinction, star, orbit, envelope, lc
+		ebv@extinction@constraint: expression that determines the constraint
+		freq@star@constraint: expression that determines the constraint
+		logg@star@constraint: expression that determines the constraint
+		irrad_frac_lost_bol@star@constraint: expression that determines the constraint
+		requiv@star@constraint: expression that determines the constraint
+		mass@star@constraint: expression that determines the constraint
+		sma@star@constraint: expression that determines the constraint
+		asini@star@constraint: expression that determines the constraint
+		period@star@constraint: expression that determines the constraint
+		requiv_max@star@constraint: expression that determines the constraint
+		requiv_min@star@constraint: expression that determines the constraint
+		asini@orbit@constraint: expression that determines the constraint
+		t0_perpass@orbit@constraint: expression that determines the constraint
+		t0_ref@orbit@constraint: expression that determines the constraint
+		mean_anom@orbit@constraint: expression that determines the constraint
+		ecosw@orbit@constraint: expression that determines the constraint
+		esinw@orbit@constraint: expression that determines the constraint
+		freq@orbit@constraint: expression that determines the constraint
+		teffratio@orbit@constraint: expression that determines the constraint
+		requivratio@orbit@constraint: expression that determines the constraint
+		requivsumfrac@orbit@constraint: expression that determines the constraint
+		pot@envelope@constraint: expression that determines the constraint
+		fillout_factor@envelope@constraint: expression that determines the constraint
+		pot_min@envelope@constraint: expression that determines the constraint
+		pot_max@envelope@constraint: expression that determines the constraint
+		compute_phases@lc@constraint: expression that determines the constraint
+	By 'component' with possible values: primary, secondary, binary, contact_envelope
+		freq@primary@constraint: expression that determines the constraint
+		logg@primary@constraint: expression that determines the constraint
+		irrad_frac_lost_bol@primary@constraint: expression that determines the constraint
+		mass@primary@constraint: expression that determines the constraint
+		sma@primary@constraint: expression that determines the constraint
+		asini@primary@constraint: expression that determines the constraint
+		period@primary@constraint: expression that determines the constraint
+		requiv_max@primary@constraint: expression that determines the constraint
+		requiv_min@primary@constraint: expression that determines the constraint
+		freq@secondary@constraint: expression that determines the constraint
+		logg@secondary@constraint: expression that determines the constraint
+		irrad_frac_lost_bol@secondary@constraint: expression that determines the constraint
+		requiv@secondary@constraint: expression that determines the constraint
+		mass@secondary@constraint: expression that determines the constraint
+		sma@secondary@constraint: expression that determines the constraint
+		asini@secondary@constraint: expression that determines the constraint
+		period@secondary@constraint: expression that determines the constraint
+		requiv_max@secondary@constraint: expression that determines the constraint
+		requiv_min@secondary@constraint: expression that determines the constraint
+		asini@binary@constraint: expression that determines the constraint
+		t0_perpass@binary@constraint: expression that determines the constraint
+		t0_ref@binary@constraint: expression that determines the constraint
+		mean_anom@binary@constraint: expression that determines the constraint
+		ecosw@binary@constraint: expression that determines the constraint
+		esinw@binary@constraint: expression that determines the constraint
+		freq@binary@constraint: expression that determines the constraint
+		teffratio@binary@constraint: expression that determines the constraint
+		requivratio@binary@constraint: expression that determines the constraint
+		requivsumfrac@binary@constraint: expression that determines the constraint
+		compute_phases@binary@constraint: expression that determines the constraint
+		pot@contact_envelope@constraint: expression that determines the constraint
+		fillout_factor@contact_envelope@constraint: expression that determines the constraint
+		pot_min@contact_envelope@constraint: expression that determines the constraint
+		pot_max@contact_envelope@constraint: expression that determines the constraint
+	By 'dataset' with possible values: mylc
+		compute_phases@mylc@constraint: expression that determines the constraint
+	By 'qualifier' with possible values: ebv, freq, logg, irrad_frac_lost_bol, asini, t0_perpass, t0_ref, mean_anom, ecosw, esinw, pot, requiv, fillout_factor, pot_min, pot_max, teffratio, requivratio, requivsumfrac, mass, sma, period, requiv_max, requiv_min, compute_phases
+		ebv@constraint: expression that determines the constraint
+		freq@constraint: expression that determines the constraint
+		logg@constraint: expression that determines the constraint
+		irrad_frac_lost_bol@constraint: expression that determines the constraint
+		asini@constraint: expression that determines the constraint
+		t0_perpass@constraint: expression that determines the constraint
+		t0_ref@constraint: expression that determines the constraint
+		mean_anom@constraint: expression that determines the constraint
+		ecosw@constraint: expression that determines the constraint
+		esinw@constraint: expression that determines the constraint
+		pot@constraint: expression that determines the constraint
+		requiv@constraint: expression that determines the constraint
+		fillout_factor@constraint: expression that determines the constraint
+		pot_min@constraint: expression that determines the constraint
+		pot_max@constraint: expression that determines the constraint
+		teffratio@constraint: expression that determines the constraint
+		requivratio@constraint: expression that determines the constraint
+		requivsumfrac@constraint: expression that determines the constraint
+		mass@constraint: expression that determines the constraint
+		sma@constraint: expression that determines the constraint
+		period@constraint: expression that determines the constraint
+		requiv_max@constraint: expression that determines the constraint
+		requiv_min@constraint: expression that determines the constraint
+		compute_phases@constraint: expression that determines the constraint
+context: compute
+	By 'kind' with possible values: phoebe
+		sample_from@phoebe@compute: distributions or solutions to use for sampling.  If pointing to a solution, adopt_solution(as_distributions=True, **kwargs) will be called to create a temporary distribution which will be removed automatically.  If all distributions are delta functions (face-values), sample_mode and sample_num will be ignored with a warning.
+		comments@phoebe@compute: User-provided comments for these compute-options.  Feel free to place any notes here - if not overridden, they will be copied to any resulting models.
+		use_server@phoebe@compute: Server to use when running the forward model (or "none" to run locally) via run_compute.
+		dynamics_method@phoebe@compute: Which method to use to determine the dynamics of components
+		ltte@phoebe@compute: Correct for light travel time effects
+		irrad_method@phoebe@compute: Which method to use to handle all irradiation effects (reflection)
+		boosting_method@phoebe@compute: Type of boosting method
+		eclipse_method@phoebe@compute: Type of eclipse algorithm
+		horizon_method@phoebe@compute: Type of horizon method
+		mesh_method@phoebe@compute: Which method to use for discretizing the surface
+		ntriangles@phoebe@compute: Requested number of triangles (won't be exact).
+		atm@phoebe@compute: Atmosphere table
+		enabled@phoebe@compute: Whether to create synthetics in compute/solver run
+		fti_method@phoebe@compute: How to handle finite-time integration (when non-zero exptime)
+	By 'component' with possible values: contact_envelope, primary, secondary
+		mesh_method@contact_envelope@compute: Which method to use for discretizing the surface
+		ntriangles@contact_envelope@compute: Requested number of triangles (won't be exact).
+		atm@primary@compute: Atmosphere table
+		atm@secondary@compute: Atmosphere table
+	By 'dataset' with possible values: mylc
+		enabled@mylc@compute: Whether to create synthetics in compute/solver run
+		fti_method@mylc@compute: How to handle finite-time integration (when non-zero exptime)
+	By 'compute' with possible values: phoebe01
+		sample_from@phoebe01@compute: distributions or solutions to use for sampling.  If pointing to a solution, adopt_solution(as_distributions=True, **kwargs) will be called to create a temporary distribution which will be removed automatically.  If all distributions are delta functions (face-values), sample_mode and sample_num will be ignored with a warning.
+		comments@phoebe01@compute: User-provided comments for these compute-options.  Feel free to place any notes here - if not overridden, they will be copied to any resulting models.
+		use_server@phoebe01@compute: Server to use when running the forward model (or "none" to run locally) via run_compute.
+		dynamics_method@phoebe01@compute: Which method to use to determine the dynamics of components
+		ltte@phoebe01@compute: Correct for light travel time effects
+		irrad_method@phoebe01@compute: Which method to use to handle all irradiation effects (reflection)
+		boosting_method@phoebe01@compute: Type of boosting method
+		eclipse_method@phoebe01@compute: Type of eclipse algorithm
+		horizon_method@phoebe01@compute: Type of horizon method
+		mesh_method@phoebe01@compute: Which method to use for discretizing the surface
+		ntriangles@phoebe01@compute: Requested number of triangles (won't be exact).
+		atm@phoebe01@compute: Atmosphere table
+		enabled@phoebe01@compute: Whether to create synthetics in compute/solver run
+		fti_method@phoebe01@compute: How to handle finite-time integration (when non-zero exptime)
+	By 'qualifier' with possible values: sample_from, comments, use_server, dynamics_method, ltte, irrad_method, boosting_method, eclipse_method, horizon_method, mesh_method, ntriangles, atm, enabled, fti_method
+		sample_from@compute: distributions or solutions to use for sampling.  If pointing to a solution, adopt_solution(as_distributions=True, **kwargs) will be called to create a temporary distribution which will be removed automatically.  If all distributions are delta functions (face-values), sample_mode and sample_num will be ignored with a warning.
+		comments@compute: User-provided comments for these compute-options.  Feel free to place any notes here - if not overridden, they will be copied to any resulting models.
+		use_server@compute: Server to use when running the forward model (or "none" to run locally) via run_compute.
+		dynamics_method@compute: Which method to use to determine the dynamics of components
+		ltte@compute: Correct for light travel time effects
+		irrad_method@compute: Which method to use to handle all irradiation effects (reflection)
+		boosting_method@compute: Type of boosting method
+		eclipse_method@compute: Type of eclipse algorithm
+		horizon_method@compute: Type of horizon method
+		mesh_method@compute: Which method to use for discretizing the surface
+		ntriangles@compute: Requested number of triangles (won't be exact).
+		atm@compute: Atmosphere table
+		enabled@compute: Whether to create synthetics in compute/solver run
+		fti_method@compute: How to handle finite-time integration (when non-zero exptime)
+context: figure
+	By 'kind' with possible values: star, orbit, envelope, lc
+		latex_repr@star@figure: Representation to use in place of the component label when rendering latex representations of parameters.  If blank, will use the labels directly.
+		color@star@figure: Color to use for figures in which color_source is set to component
+		marker@star@figure: Marker (datasets only, not models) to use for figures in which marker_source is set to component
+		linestyle@star@figure: Linestyle to use for figures in which linestyle_source is set to component
+		latex_repr@orbit@figure: Representation to use in place of the component label when rendering latex representations of parameters.  If blank, will use the labels directly.
+		latex_repr@envelope@figure: Representation to use in place of the component label when rendering latex representations of parameters.  If blank, will use the labels directly.
+		latex_repr@lc@figure: Representation to use in place of the dataset label when rendering latex representations of parameters.  If blank, will use the labels directly.
+		color@lc@figure: Color to use for figures in which color_source is set to dataset
+		marker@lc@figure: Marker (datasets only, not models) to use for figures in which marker_source is set to dataset
+		linestyle@lc@figure: Linestyle to use for figures in which linestyle_source is set to dataset
+		contexts@lc@figure: Contexts to include in the plot
+		datasets@lc@figure: Datasets to include in the plot
+		models@lc@figure: Models to include in the plot
+		x@lc@figure: Array to plot along x-axis
+		y@lc@figure: Array to plot along y-axis
+		xlabel_source@lc@figure: Whether to automatically or manually provide label for the x-axis
+		xunit_source@lc@figure: Whether to automatically or manually set the x-units.
+		xlim_source@lc@figure: Whether to automatically or manually set the x-limits.
+		ylabel_source@lc@figure: Whether to automatically or manually provide label for the y-axis
+		yunit_source@lc@figure: Whether to automatically or manually set the y-units.
+		ylim_source@lc@figure: Whether to automatically or manually set the y-limits.
+		color_source@lc@figure: Source to use for color.  For manual, see the c parameter in the figure context.  Otherwise, see the c parameters tagged with the corresponding dataset/model/component.
+		marker_source@lc@figure: Source to use for marker (datasets only, not models).  For manual, see the marker parameter in the figure context.  Otherwise, see the marker parameters tagged with the corresponding dataset/model/component.
+		marker@lc@figure: Default marker (datasets only, not models) when plotted via run_figure
+		linestyle_source@lc@figure: Source to use for linestyle.  For manual, see the linestyle parameter in the figure context.  Otherwise, see the linestyle parameters tagged with the corresponding dataset/model/component.
+		linestyle@lc@figure: Default linestyle when plotted via run_figure
+		legend@lc@figure: Whether to draw the legend
+		uncover@lc@figure: Whether to uncover up to the current time(s) (see times_source and times parameters).
+		highlight@lc@figure: Whether to higlight the current time(s) (see times_source and times parameters).
+		time_source@lc@figure: Source to use for highlight/uncover time for this individual figure (or set to default to respect the default_time_source parameter).
+	By 'figure' with possible values: lcfig01
+		contexts@lcfig01@figure: Contexts to include in the plot
+		datasets@lcfig01@figure: Datasets to include in the plot
+		models@lcfig01@figure: Models to include in the plot
+		x@lcfig01@figure: Array to plot along x-axis
+		y@lcfig01@figure: Array to plot along y-axis
+		xlabel_source@lcfig01@figure: Whether to automatically or manually provide label for the x-axis
+		xunit_source@lcfig01@figure: Whether to automatically or manually set the x-units.
+		xlim_source@lcfig01@figure: Whether to automatically or manually set the x-limits.
+		ylabel_source@lcfig01@figure: Whether to automatically or manually provide label for the y-axis
+		yunit_source@lcfig01@figure: Whether to automatically or manually set the y-units.
+		ylim_source@lcfig01@figure: Whether to automatically or manually set the y-limits.
+		color_source@lcfig01@figure: Source to use for color.  For manual, see the c parameter in the figure context.  Otherwise, see the c parameters tagged with the corresponding dataset/model/component.
+		marker_source@lcfig01@figure: Source to use for marker (datasets only, not models).  For manual, see the marker parameter in the figure context.  Otherwise, see the marker parameters tagged with the corresponding dataset/model/component.
+		marker@lcfig01@figure: Default marker (datasets only, not models) when plotted via run_figure
+		linestyle_source@lcfig01@figure: Source to use for linestyle.  For manual, see the linestyle parameter in the figure context.  Otherwise, see the linestyle parameters tagged with the corresponding dataset/model/component.
+		linestyle@lcfig01@figure: Default linestyle when plotted via run_figure
+		legend@lcfig01@figure: Whether to draw the legend
+		uncover@lcfig01@figure: Whether to uncover up to the current time(s) (see times_source and times parameters).
+		highlight@lcfig01@figure: Whether to higlight the current time(s) (see times_source and times parameters).
+		time_source@lcfig01@figure: Source to use for highlight/uncover time for this individual figure (or set to default to respect the default_time_source parameter).
+	By 'component' with possible values: primary, secondary, binary, contact_envelope
+		latex_repr@primary@figure: Representation to use in place of the component label when rendering latex representations of parameters.  If blank, will use the labels directly.
+		color@primary@figure: Color to use for figures in which color_source is set to component
+		marker@primary@figure: Marker (datasets only, not models) to use for figures in which marker_source is set to component
+		linestyle@primary@figure: Linestyle to use for figures in which linestyle_source is set to component
+		latex_repr@secondary@figure: Representation to use in place of the component label when rendering latex representations of parameters.  If blank, will use the labels directly.
+		color@secondary@figure: Color to use for figures in which color_source is set to component
+		marker@secondary@figure: Marker (datasets only, not models) to use for figures in which marker_source is set to component
+		linestyle@secondary@figure: Linestyle to use for figures in which linestyle_source is set to component
+		latex_repr@binary@figure: Representation to use in place of the component label when rendering latex representations of parameters.  If blank, will use the labels directly.
+		latex_repr@contact_envelope@figure: Representation to use in place of the component label when rendering latex representations of parameters.  If blank, will use the labels directly.
+	By 'dataset' with possible values: mylc
+		latex_repr@mylc@figure: Representation to use in place of the dataset label when rendering latex representations of parameters.  If blank, will use the labels directly.
+		color@mylc@figure: Color to use for figures in which color_source is set to dataset
+		marker@mylc@figure: Marker (datasets only, not models) to use for figures in which marker_source is set to dataset
+		linestyle@mylc@figure: Linestyle to use for figures in which linestyle_source is set to dataset
+	By 'qualifier' with possible values: default_time_source, latex_repr, color, marker, linestyle, contexts, datasets, models, x, y, xlabel_source, xunit_source, xlim_source, ylabel_source, yunit_source, ylim_source, color_source, marker_source, linestyle_source, legend, uncover, highlight, time_source
+		default_time_source@figure: Source to use for highlight/uncover time for any figure in which time_source is set to default.
+		latex_repr@figure: Representation to use in place of the component label when rendering latex representations of parameters.  If blank, will use the labels directly.
+		latex_repr@figure: Representation to use in place of the dataset label when rendering latex representations of parameters.  If blank, will use the labels directly.
+		color@figure: Color to use for figures in which color_source is set to component
+		color@figure: Color to use for figures in which color_source is set to dataset
+		marker@figure: Marker (datasets only, not models) to use for figures in which marker_source is set to component
+		marker@figure: Marker (datasets only, not models) to use for figures in which marker_source is set to dataset
+		marker@figure: Default marker (datasets only, not models) when plotted via run_figure
+		linestyle@figure: Linestyle to use for figures in which linestyle_source is set to component
+		linestyle@figure: Linestyle to use for figures in which linestyle_source is set to dataset
+		linestyle@figure: Default linestyle when plotted via run_figure
+		contexts@figure: Contexts to include in the plot
+		datasets@figure: Datasets to include in the plot
+		models@figure: Models to include in the plot
+		x@figure: Array to plot along x-axis
+		y@figure: Array to plot along y-axis
+		xlabel_source@figure: Whether to automatically or manually provide label for the x-axis
+		xunit_source@figure: Whether to automatically or manually set the x-units.
+		xlim_source@figure: Whether to automatically or manually set the x-limits.
+		ylabel_source@figure: Whether to automatically or manually provide label for the y-axis
+		yunit_source@figure: Whether to automatically or manually set the y-units.
+		ylim_source@figure: Whether to automatically or manually set the y-limits.
+		color_source@figure: Source to use for color.  For manual, see the c parameter in the figure context.  Otherwise, see the c parameters tagged with the corresponding dataset/model/component.
+		marker_source@figure: Source to use for marker (datasets only, not models).  For manual, see the marker parameter in the figure context.  Otherwise, see the marker parameters tagged with the corresponding dataset/model/component.
+		linestyle_source@figure: Source to use for linestyle.  For manual, see the linestyle parameter in the figure context.  Otherwise, see the linestyle parameters tagged with the corresponding dataset/model/component.
+		legend@figure: Whether to draw the legend
+		uncover@figure: Whether to uncover up to the current time(s) (see times_source and times parameters).
+		highlight@figure: Whether to higlight the current time(s) (see times_source and times parameters).
+		time_source@figure: Source to use for highlight/uncover time for this individual figure (or set to default to respect the default_time_source parameter).
+context: setting
+	By 'qualifier' with possible values: phoebe_version, dict_filter, dict_set_all, run_checks_compute, run_checks_solver, run_checks_solution, run_checks_figure, run_checks_server, auto_add_figure, auto_remove_figure, web_client, web_client_url
+		phoebe_version@setting: Version of PHOEBE
+		dict_filter@setting: Filters to use when using dictionary access
+		dict_set_all@setting: Whether to set all values for dictionary access that returns more than 1 result
+		run_checks_compute@setting: Compute options to use when calling run_checks/run_checks_compute or within interactive checks.
+		run_checks_solver@setting: Solver options to use when calling run_checks/run_checks_solver or within interactive checks.
+		run_checks_solution@setting: Solutions to use when calling run_checks/run_checks_solution or within interactive checks.
+		run_checks_figure@setting: Figures to use when calling run_checks/run_checks_figure or within interactive checks.
+		run_checks_server@setting: Servers to use when calling run_checks/run_checks_server or within interactive checks.
+		auto_add_figure@setting: Whether to automatically add figure parameters when a dataset is added with a new dataset type, or a solution is added.
+		auto_remove_figure@setting: Whether to automatically remove figure parameters when the referenced dataset/solution are removed.
+		web_client@setting: Whether to default to using the web-client over a locally installed desktop-client when opening the UI from the desktop client.
+		web_client_url@setting: Default location of web-client.  Will only be used if web_client is True.
+context: dataset
+	By 'kind' with possible values: lc
+		times@lc@dataset: Observed times
+		fluxes@lc@dataset: Observed flux
+		passband@lc@dataset: Passband
+		intens_weighting@lc@dataset: Whether passband intensities are weighted by energy or photons
+		compute_times@lc@dataset: Times to use during run_compute.  If empty, will use times parameter
+		compute_phases@lc@dataset: Phases associated with compute_times.
+		phases_t0@lc@dataset: t0 to use when converting between compute_times and compute_phases as well as when applying mask_phases
+		mask_enabled@lc@dataset: Whether to apply the mask in mask_phases during plotting, calculate_residuals, calculate_chi2, calculate_lnlikelihood, and run_solver
+		mask_phases@lc@dataset: List of phase-tuples.  Any observations inside the range set by any of the tuples will be included.
+		solver_times@lc@dataset: times to use within run_solver.  All options will properly account for masking from mask_times.  To see how this is parsed, see b.parse_solver_times.  auto: use compute_times if provided and shorter than times, otherwise use times.  compute_times: use compute_times if provided.  times: use times array.
+		sigmas@lc@dataset: Observed uncertainty on flux
+		pblum_mode@lc@dataset: Mode for scaling passband luminosities
+		pblum_component@lc@dataset: Which component's pblum will be provided
+		l3_mode@lc@dataset: Whether third light is given in units of flux or as a fraction of total light
+		l3@lc@dataset: Third light in flux units
+		exptime@lc@dataset: Exposure time (time is defined as mid-exposure)
+		ld_mode@lc@dataset: Mode to use for limb-darkening
+		pblum@lc@dataset: Passband luminosity (defined at t0)
+	By 'component' with possible values: binary, primary, secondary
+		compute_phases@binary@dataset: Phases associated with compute_times.
+		phases_t0@binary@dataset: t0 to use when converting between compute_times and compute_phases as well as when applying mask_phases
+		mask_phases@binary@dataset: List of phase-tuples.  Any observations inside the range set by any of the tuples will be included.
+		ld_mode@primary@dataset: Mode to use for limb-darkening
+		pblum@primary@dataset: Passband luminosity (defined at t0)
+		ld_mode@secondary@dataset: Mode to use for limb-darkening
+	By 'dataset' with possible values: mylc
+		times@mylc@dataset: Observed times
+		fluxes@mylc@dataset: Observed flux
+		passband@mylc@dataset: Passband
+		intens_weighting@mylc@dataset: Whether passband intensities are weighted by energy or photons
+		compute_times@mylc@dataset: Times to use during run_compute.  If empty, will use times parameter
+		compute_phases@mylc@dataset: Phases associated with compute_times.
+		phases_t0@mylc@dataset: t0 to use when converting between compute_times and compute_phases as well as when applying mask_phases
+		mask_enabled@mylc@dataset: Whether to apply the mask in mask_phases during plotting, calculate_residuals, calculate_chi2, calculate_lnlikelihood, and run_solver
+		mask_phases@mylc@dataset: List of phase-tuples.  Any observations inside the range set by any of the tuples will be included.
+		solver_times@mylc@dataset: times to use within run_solver.  All options will properly account for masking from mask_times.  To see how this is parsed, see b.parse_solver_times.  auto: use compute_times if provided and shorter than times, otherwise use times.  compute_times: use compute_times if provided.  times: use times array.
+		sigmas@mylc@dataset: Observed uncertainty on flux
+		pblum_mode@mylc@dataset: Mode for scaling passband luminosities
+		pblum_component@mylc@dataset: Which component's pblum will be provided
+		l3_mode@mylc@dataset: Whether third light is given in units of flux or as a fraction of total light
+		l3@mylc@dataset: Third light in flux units
+		exptime@mylc@dataset: Exposure time (time is defined as mid-exposure)
+		ld_mode@mylc@dataset: Mode to use for limb-darkening
+		pblum@mylc@dataset: Passband luminosity (defined at t0)
+	By 'qualifier' with possible values: times, fluxes, passband, intens_weighting, compute_times, compute_phases, phases_t0, mask_enabled, mask_phases, solver_times, sigmas, pblum_mode, pblum_component, l3_mode, l3, exptime, ld_mode, pblum
+		times@dataset: Observed times
+		fluxes@dataset: Observed flux
+		passband@dataset: Passband
+		intens_weighting@dataset: Whether passband intensities are weighted by energy or photons
+		compute_times@dataset: Times to use during run_compute.  If empty, will use times parameter
+		compute_phases@dataset: Phases associated with compute_times.
+		phases_t0@dataset: t0 to use when converting between compute_times and compute_phases as well as when applying mask_phases
+		mask_enabled@dataset: Whether to apply the mask in mask_phases during plotting, calculate_residuals, calculate_chi2, calculate_lnlikelihood, and run_solver
+		mask_phases@dataset: List of phase-tuples.  Any observations inside the range set by any of the tuples will be included.
+		solver_times@dataset: times to use within run_solver.  All options will properly account for masking from mask_times.  To see how this is parsed, see b.parse_solver_times.  auto: use compute_times if provided and shorter than times, otherwise use times.  compute_times: use compute_times if provided.  times: use times array.
+		sigmas@dataset: Observed uncertainty on flux
+		pblum_mode@dataset: Mode for scaling passband luminosities
+		pblum_component@dataset: Which component's pblum will be provided
+		l3_mode@dataset: Whether third light is given in units of flux or as a fraction of total light
+		l3@dataset: Third light in flux units
+		exptime@dataset: Exposure time (time is defined as mid-exposure)
+		ld_mode@dataset: Mode to use for limb-darkening
+		pblum@dataset: Passband luminosity (defined at t0)
