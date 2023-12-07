@@ -1,0 +1,2286 @@
+
+bruh
+/home/nadiabolef/contactBinaries/venv/lib/python3.10/site-packages/sklearn/base.py:348: InconsistentVersionWarning: Trying to unpickle estimator KNeighborsRegressor from version 1.0.2 when using version 1.3.2. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+/home/nadiabolef/contactBinaries/venv/lib/python3.10/site-packages/sklearn/base.py:348: InconsistentVersionWarning: Trying to unpickle estimator MinMaxScaler from version 1.0.2 when using version 1.3.2. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+ParameterSet: 5 parameters
+   t0_supconj@binary@orbit@com...: -0.005340874123054479 d
+   teffratio@binary@orbit@comp...: 0.8538534461742996
+      incl@binary@orbit@component: 43.04930734420137 deg
+   fillout_factor@contact_enve...: 0.5208636793200399
+         q@binary@orbit@component: 3.777782395885582
+<ConstraintParameter: {teff@secondary@component} = {teffratio@binary@component} * {teff@primary@component} (solar units) => 5600.0 K>
+ParameterSet: 34 parameters
+      t0_supconj@binary@component: -0.005340874123054479 d
+       teffratio@binary@component: 0.8538534461742996
+            incl@binary@component: 43.04930734420137 deg
+C  fillout_factor@contact_enve...: 0.5208636793200399
+               q@binary@component: 3.777782395885582
+C     t0_perpass@binary@component: -0.09133557412305447 d
+C         t0_ref@binary@component: -0.005340874123054479 d
+C     compute_phases@lc01@dataset: []
+C     compute_times@orb01@dataset: [-0.00534087 -0.00190109  0.0015387  ...
+  0.33175835  0.33519814  0.33863793] d
+C    compute_times@mesh01@dataset: [-0.00534087  0.0015387   0.00841828 ...
+  0.32487877  0.33175835  0.33863793] d
+C        teff@secondary@component: 4902.826487932828 K
+C          asini@binary@component: 2.5587124107208643 solRad
+C         asini@primary@component: 2.0231684703094475 solRad
+C          incl@primary@component: 43.04930734420137 deg
+C       asini@secondary@component: 0.5355439404114167 solRad
+C        incl@secondary@component: 43.04930734420137 deg
+   pot@contact_envelope@component: 7.3007808494841635
+C      requiv@secondary@component: 1.9729638542461856 solRad
+C  pot_min@contact_envelope@co...: 6.999624340232008
+C  pot_max@contact_envelope@co...: 7.628164687214623
+C           sma@primary@component: 2.9637957633849688 solRad
+C    requiv_max@primary@component: 1.2600815528850637 solRad
+C    requiv_min@primary@component: 1.0153635140084898 solRad
+C        mass@secondary@component: 4.722227994856977 solMass
+C         sma@secondary@component: 0.7845332136157092 solRad
+C  requiv_max@secondary@component: 2.07814135946394 solRad
+C  requiv_min@secondary@component: 1.8701277981186575 solRad
+C            sma@binary@component: 3.748328977000678 solRad
+C        requiv@primary@component: 1.1315332466082184 solRad
+C      mean_anom@binary@component: 95.58962667694908 deg
+C        logg@secondary@component: 4.521976326140762
+C    requivratio@binary@component: 1.7436198716742644
+C  requivsumfrac@binary@component: 0.8282349601391038
+C          logg@primary@component: 4.427643007515163
+100%|██████████| 1541/1541 [03:00<00:00,  8.54it/s]
+<ParameterSet: 530 parameters | kinds: lc, mesh, orb>
+
+(<autofig.figure.Figure | 1 axes | 3 call(s)>,
+ <Figure size 800x600 with 1 Axes>)
+{'_bundle': <PHOEBE Bundle: 1333 parameters | contexts: setting, solver, system, component, dataset, model, solution, compute, constraint, figure>,
+ '_filter': {'dataset': 'lc01', 'context': 'dataset'},
+ '_params': [<Parameter: times=[3.66884259 3.66895833 3.66907407 ... 3.83978009
+   3.83989583 3.84001157] d | keys: description, value, default_unit, visible_if, required_shape, copy_for, readonly, advanced, latexfmt>,
+  <Parameter: fluxes=[355455.61240164 356520.26664499 354556.65118186 ...
+   368140.82935407 365729.4753995  365143.26298366] W / m2 | keys: description, value, default_unit, visible_if, required_shape, copy_for, readonly, advanced, latexfmt>,
+  <Parameter: passband=SDSS:g | keys: description, choices, value, visible_if, copy_for, readonly, advanced, latexfmt>,
+  <Parameter: intens_weighting=energy | keys: description, choices, value, visible_if, copy_for, readonly, advanced, latexfmt>,
+  <Parameter: compute_times=[] d | keys: description, value, default_unit, visible_if, required_shape, copy_for, readonly, advanced, latexfmt>,
+  <Parameter: compute_phases=[] | keys: description, value, default_unit, visible_if, required_shape, copy_for, readonly, advanced, latexfmt>,
+  <Parameter: phases_t0=t0_supconj | keys: description, choices, value, visible_if, copy_for, readonly, advanced, latexfmt>,
+  <Parameter: mask_enabled=True | keys: description, value, visible_if, copy_for, readonly, advanced, latexfmt>,
+  <Parameter: mask_phases=[] | keys: description, value, default_unit, visible_if, required_shape, copy_for, readonly, advanced, latexfmt>,
+  <Parameter: solver_times=auto | keys: description, choices, value, visible_if, copy_for, readonly, advanced, latexfmt>,
+  <Parameter: sigmas=[] W / m2 | keys: description, value, default_unit, visible_if, required_shape, copy_for, readonly, advanced, latexfmt>,
+  <Parameter: pblum_mode=dataset-scaled | keys: description, choices, value, visible_if, copy_for, readonly, advanced, latexfmt>,
+  <Parameter: l3_mode=flux | keys: description, choices, value, visible_if, copy_for, readonly, advanced, latexfmt>,
+  <Parameter: l3=0.0 W / m2 | keys: description, value, quantity, default_unit, limits, visible_if, copy_for, readonly, advanced, latexfmt>,
+  <Parameter: exptime=0.0 s | keys: description, value, quantity, default_unit, limits, visible_if, copy_for, readonly, advanced, latexfmt>,
+  <Parameter: ld_mode=lookup | keys: description, choices, value, visible_if, copy_for, readonly, advanced, latexfmt>,
+  <Parameter: ld_mode=lookup | keys: description, choices, value, visible_if, copy_for, readonly, advanced, latexfmt>,
+  <Parameter: ld_func=logarithmic | keys: description, choices, value, visible_if, copy_for, readonly, advanced, latexfmt>,
+  <Parameter: ld_func=logarithmic | keys: description, choices, value, visible_if, copy_for, readonly, advanced, latexfmt>,
+  <Parameter: ld_coeffs_source=auto | keys: description, choices, value, visible_if, copy_for, readonly, advanced, latexfmt>,
+  <Parameter: ld_coeffs_source=auto | keys: description, choices, value, visible_if, copy_for, readonly, advanced, latexfmt>],
+ '_qualifier': None,
+ '_time': None,
+ '_component': None,
+ '_dataset': 'lc01',
+ '_figure': None,
+ '_server': None,
+ '_constraint': None,
+ '_distribution': None,
+ '_compute': None,
+ '_model': None,
+ '_solver': None,
+ '_solution': None,
+ '_kind': 'lc',
+ '_context': 'dataset',
+ '_next_field': 'component',
+ '_feature': None}
+/tmp/ipykernel_767/3600713204.py:5: DtypeWarning: Columns (21) have mixed types. Specify dtype option on import or set low_memory=False.
+  df = pd.read_csv("jd_photometry.csv")
+48020
+<matplotlib.collections.PathCollection at 0x7f98f2414820>
+
+[2460260.66884259 2460260.66895833 2460260.66907407 ... 2460260.83978009
+ 2460260.83989583 2460260.84001157]
+[3.66884259 3.66895833 3.66907407 ... 3.83978009 3.83989583 3.84001157]
+<matplotlib.collections.PathCollection at 0x7f98f22e1750>
+
+<ParameterSet: 85 parameters | contexts: dataset, compute, figure, constraint>
+Wed, 06 Dec 2023 15:52 BUNDLE       ERROR   Constraint 'pot@contact_envelope@envelope@constraint' raised the following error while attempting to solve for 'pot@contact_envelope@envelope@component'.  Consider flipping the constraint or changing the value of one of ['requiv@primary@star@component', 'q@binary@orbit@component', 'sma@binary@orbit@component', 'pot@contact_envelope@envelope@component'] until the constraint succeeds.  Original error: roche_contact_Omega_at_partial_vol::Volume is outside bounds.
+Wed, 06 Dec 2023 15:52 BUNDLE       ERROR   Constraint 'requiv@secondary@star@constraint' raised the following error while attempting to solve for 'requiv@secondary@star@component'.  Consider flipping the constraint or changing the value of one of ['pot@contact_envelope@envelope@component', 'q@binary@orbit@component', 'sma@binary@orbit@component', 'requiv@secondary@star@component'] until the constraint succeeds.  Original error: potential > L1 critical value
+Wed, 06 Dec 2023 15:52 BUNDLE       ERROR   Constraint 'fillout_factor@contact_envelope@envelope@constraint' raised the following error while setting the value of 'fillout_factor@contact_envelope@envelope@component'.  Original error: value of fillout_factor=-19.701548546465133 not within limits of [<Quantity 0.>, <Quantity 1.>]
+Run Checks Report: PASS
+
+PHOEBE Bundle: 188 parameters
+                        t0@system: 0.0 d
+                        ra@system: 0.0 deg
+                       dec@system: 0.0 deg
+                  distance@system: 1.0 m
+                    vgamma@system: 0.0 km / s
+C                      ebv@system: 0.057741935483870965
+                        Av@system: 0.179
+                        Rv@system: 3.1
+                 hierarchy@system: orbit:binary(star:primary, star:secondary, envelope:contact_envelope)
+         requiv@primary@component: 1.37 solRad
+C    requiv_max@primary@component: 1.3922159789270905 solRad
+C    requiv_min@primary@component: 1.3199515362463703 solRad
+           teff@primary@component: 5742.0 K
+C          logg@primary@component: 4.261536510961695
+        syncpar@primary@component: 1.0
+C        period@primary@component: 0.3439788 d
+C          freq@primary@component: 18.26619838199331 rad / d
+      gravb_bol@primary@component: 0.32
+   irrad_frac_refl_bol@primary...: 0.5
+C  irrad_frac_lost_bol@primary...: 0.5
+    ld_mode_bol@primary@component: lookup
+    ld_func_bol@primary@component: logarithmic
+...
+            legend@lcfig01@figure: True
+           uncover@lcfig01@figure: False
+         highlight@lcfig01@figure: True
+       time_source@lcfig01@figure: default
+Output is truncated. View as a scrollable element or open in a text editor. Adjust cell output settings...
+100%|██████████| 1000/1000 [01:32<00:00, 10.80it/s]
+<ParameterSet: 3 parameters | qualifiers: times, comments, fluxes>
+ParameterSet: 32 parameters
+               times@lc01@dataset: [2460257.         2466265.51401954 2472274.02803907
+ ... 8450745.47747693 8456753.99149646
+ 8462762.505516  ] d
+              fluxes@lc01@dataset: [] W / m2
+            passband@lc01@dataset: SDSS:g
+    intens_weighting@lc01@dataset: energy
+       compute_times@lc01@dataset: [] d
+C     compute_phases@lc01@dataset: []
+           phases_t0@lc01@dataset: t0_supconj
+        mask_enabled@lc01@dataset: True
+         mask_phases@lc01@dataset: []
+        solver_times@lc01@dataset: auto
+              sigmas@lc01@dataset: [] W / m2
+          pblum_mode@lc01@dataset: component-coupled
+     pblum_component@lc01@dataset: primary
+             l3_mode@lc01@dataset: flux
+                  l3@lc01@dataset: 0.0 W / m2
+             exptime@lc01@dataset: 0.0 s
+         enabled@phoebe01@compute: True
+      fti_method@phoebe01@compute: none
+     ld_mode@primary@lc01@dataset: lookup
+   ld_mode@secondary@lc01@dataset: lookup
+     ld_func@primary@lc01@dataset: logarithmic
+   ld_func@secondary@lc01@dataset: logarithmic
+   ld_coeffs_source@primary@lc...: auto
+   ld_coeffs_source@secondary@...: auto
+       pblum@primary@lc01@dataset: 12.566370614359172 W
+        compute_phases@constraint: times_to_phases({compute_times@lc01@dataset}, {phases_period@lc01@dataset}, {period@binary@component}, {period_anom@binary@component}, {phases_dpdt@lc01@dataset}, {dpdt@binary@component}, {phases_t0@lc01@dataset}, {t0_supconj@binary@component}, {t0_perpass@binary@component}, {t0_ref@binary@component})
+           latex_repr@lc01@figure: 
+                color@lc01@figure: black
+               marker@lc01@figure: .
+            linestyle@lc01@figure: solid
+R             times@default@model: [2460257.         2466265.51401954 2472274.02803907
+ ... 8450745.47747693 8456753.99149646
+ 8462762.505516  ] d
+R            fluxes@default@model: [1.11815837 0.82200231 1.0111771  ... 1.12071522
+ 0.91956241 0.92868997] W / m2
+
+<ParameterSet: 80 parameters | contexts: dataset, compute, figure, constraint>
+{'_params': [<Parameter: t0=0.0 d | keys: description, value, quantity, default_unit, limits, visible_if, copy_for, readonly, advanced, latexfmt>, <Parameter: ra=0.0 deg | keys: description, value, quantity, default_unit, limits, visible_if, copy_for, readonly, advanced, latexfmt>, <Parameter: dec=0.0 deg | keys: description, value, quantity, default_unit, limits, visible_if, copy_for, readonly, advanced, latexfmt>, <Parameter: distance=1.0 m | keys: description, value, quantity, default_unit, limits, visible_if, copy_for, readonly, advanced, latexfmt>, <Parameter: vgamma=0.0 km / s | keys: description, value, quantity, default_unit, limits, visible_if, copy_for, readonly, advanced, latexfmt>, <Parameter: ebv=0.057741935483870965 | keys: description, value, quantity, default_unit, limits, visible_if, copy_for, readonly, advanced, latexfmt>, <Parameter: Av=0.179 | keys: description, value, quantity, default_unit, limits, visible_if, copy_for, readonly, advanced, latexfmt>, <Parameter: Rv=3.1 | keys: description, value, quantity, default_unit, limits, visible_if, copy_for, readonly, advanced, latexfmt>, <HierarchyParameter: orbit:binary(star:primary, star:secondary, envelope:contact_envelope)>, <Parameter: requiv=1.37 solRad | keys: description, value, quantity, default_unit, limits, visible_if, copy_for, readonly, advanced, latexfmt>, <Parameter: requiv_max=1.3922159789270905 solRad | keys: description, value, quantity, default_unit, limits, visible_if, copy_for, readonly, advanced, latexfmt>, <Parameter: requiv_min=1.3199515362463703 solRad | keys: description, value, quantity, default_unit, limits, visible_if, copy_for, readonly, advanced, latexfmt>, <Parameter: teff=5742.0 K | keys: description, value, quantity, default_unit, limits, visible_if, copy_for, readonly, advanced, latexfmt>, <Parameter: abun=0.0 | keys: description, value, quantity, default_unit, limits, visible_if, copy_for, readonly, advanced, latexfmt>, <Parameter: logg=4.261536510961695 | keys: description, value, quantity, default_unit, limits, visible_if, copy_for, readonly, advanced, latexfmt>, <Parameter: syncpar=1.0 | keys: description, value, quantity, default_unit, limits, visible_if, copy_for, readonly, advanced, latexfmt>, <Parameter: period=0.3439788 d | keys: description, value, quantity, default_unit, limits, visible_if, copy_for, readonly, advanced, latexfmt>, <Parameter: freq=18.26619838199331 rad / d | keys: description, value, quantity, default_unit, limits, visible_if, copy_for, readonly, advanced, latexfmt>, <Parameter: pitch=0.0 deg | keys: description, value, quantity, default_unit, limits, visible_if, copy_for, readonly, advanced, latexfmt>, <Parameter: yaw=0.0 deg | keys: description, value, quantity, default_unit, limits, visible_if, copy_for, readonly, advanced, latexfmt>, <Parameter: incl=89.6 deg | keys: description, value, quantity, default_unit, limits, visible_if, copy_for, readonly, advanced, latexfmt>, <Parameter: long_an=0.0 deg | keys: description, value, quantity, default_unit, limits, visible_if, copy_for, readonly, advanced, latexfmt>, <Parameter: gravb_bol=0.32 | keys: description, value, quantity, default_unit, limits, visible_if, copy_for, readonly, advanced, latexfmt>, <Parameter: irrad_frac_refl_bol=0.5 | keys: description, value, quantity, default_unit, limits, visible_if, copy_for, readonly, advanced, latexfmt>, <Parameter: irrad_frac_lost_bol=0.5 | keys: description, value, quantity, default_unit, limits, visible_if, copy_for, readonly, advanced, latexfmt>, <Parameter: ld_mode_bol=lookup | keys: description, choices, value, visible_if, copy_for, readonly, advanced, latexfmt>, <Parameter: ld_func_bol=logarithmic | keys: description, choices, value, visible_if, copy_for, readonly, advanced, latexfmt>, <Parameter: ld_coeffs_source_bol=auto | keys: description, choices, value, visible_if, copy_for, readonly, advanced, latexfmt>, <Parameter: ld_coeffs_bol=[0.71017789 0.28721971] | keys: description, value, default_unit, visible_if, required_shape, copy_for, readonly, advanced, latexfmt>, <Parameter: mass=1.25 solMass | keys: description, value, quantity, default_unit, limits, visible_if, copy_for, readonly, advanced, latexfmt>, <Parameter: requiv=0.5489377441897905 solRad | keys: description, value, quantity, default_unit, limits, visible_if, copy_for, readonly, advanced, latexfmt>, <Parameter: requiv_max=0.5791393958335169 solRad | keys: description, value, quantity, default_unit, limits, visible_if, copy_for, readonly, advanced, latexfmt>, <Parameter: requiv_min=0.4866922449685057 solRad | keys: description, value, quantity, default_unit, limits, visible_if, copy_for, readonly, advanced, latexfmt>, <Parameter: teff=5600.0 K | keys: description, value, quantity, default_unit, limits, visible_if, copy_for, readonly, advanced, latexfmt>, <Parameter: abun=0.0 | keys: description, value, quantity, default_unit, limits, visible_if, copy_for, readonly, advanced, latexfmt>, <Parameter: logg=4.0973241438566115 | keys: description, value, quantity, default_unit, limits, visible_if, copy_for, readonly, advanced, latexfmt>, <Parameter: syncpar=1.0 | keys: description, value, quantity, default_unit, limits, visible_if, copy_for, readonly, advanced, latexfmt>, <Parameter: period=0.3439788 d | keys: description, value, quantity, default_unit, limits, visible_if, copy_for, readonly, advanced, latexfmt>, <Parameter: freq=18.26619838199331 rad / d | keys: description, value, quantity, default_unit, limits, visible_if, copy_for, readonly, advanced, latexfmt>, <Parameter: pitch=0.0 deg | keys: description, value, quantity, default_unit, limits, visible_if, copy_for, readonly, advanced, latexfmt>, <Parameter: yaw=0.0 deg | keys: description, value, quantity, default_unit, limits, visible_if, copy_for, readonly, advanced, latexfmt>, <Parameter: incl=89.6 deg | keys: description, value, quantity, default_unit, limits, visible_if, copy_for, readonly, advanced, latexfmt>, <Parameter: long_an=0.0 deg | keys: description, value, quantity, default_unit, limits, visible_if, copy_for, readonly, advanced, latexfmt>, <Parameter: gravb_bol=0.32 | keys: description, value, quantity, default_unit, limits, visible_if, copy_for, readonly, advanced, latexfmt>, <Parameter: irrad_frac_refl_bol=0.5 | keys: description, value, quantity, default_unit, limits, visible_if, copy_for, readonly, advanced, latexfmt>, <Parameter: irrad_frac_lost_bol=0.5 | keys: description, value, quantity, default_unit, limits, visible_if, copy_for, readonly, advanced, latexfmt>, <Parameter: ld_mode_bol=lookup | keys: description, choices, value, visible_if, copy_for, readonly, advanced, latexfmt>, <Parameter: ld_func_bol=logarithmic | keys: description, choices, value, visible_if, copy_for, readonly, advanced, latexfmt>, <Parameter: ld_coeffs_source_bol=auto | keys: description, choices, value, visible_if, copy_for, readonly, advanced, latexfmt>, <Parameter: ld_coeffs_bol=[0.71143302 0.28908705] | keys: description, value, default_unit, visible_if, required_shape, copy_for, readonly, advanced, latexfmt>, <Parameter: mass=0.1375 solMass | keys: description, value, quantity, default_unit, limits, visible_if, copy_for, readonly, advanced, latexfmt>, <Parameter: period=0.3439788 d | keys: description, value, quantity, default_unit, limits, visible_if, copy_for, readonly, advanced, latexfmt>, <Parameter: period_anom=0.3439788 d | keys: description, value, quantity, default_unit, limits, visible_if, copy_for, readonly, advanced, latexfmt>, <Parameter: freq=18.26619838199331 rad / d | keys: description, value, quantity, default_unit, limits, visible_if, copy_for, readonly, advanced, latexfmt>, <Parameter: dpdt=0.0 s / yr | keys: description, value, quantity, default_unit, limits, visible_if, copy_for, readonly, advanced, latexfmt>, <Parameter: per0=0.0 deg | keys: description, value, quantity, default_unit, limits, visible_if, copy_for, readonly, advanced, latexfmt>, <Parameter: dperdt=0.0 deg / yr | keys: description, value, quantity, default_unit, limits, visible_if, copy_for, readonly, advanced, latexfmt>, <Parameter: ecc=0.0 | keys: description, value, quantity, default_unit, limits, visible_if, copy_for, readonly, advanced, latexfmt>, <Parameter: t0_perpass=0.05400530000000002 d | keys: description, value, quantity, default_unit, limits, visible_if, copy_for, readonly, advanced, latexfmt>, <Parameter: t0_supconj=0.14 d | keys: description, value, quantity, default_unit, limits, visible_if, copy_for, readonly, advanced, latexfmt>, <Parameter: t0_ref=0.14 d | keys: description, value, quantity, default_unit, limits, visible_if, copy_for, readonly, advanced, latexfmt>, <Parameter: mean_anom=303.47934509480916 deg | keys: description, value, quantity, default_unit, limits, visible_if, copy_for, readonly, advanced, latexfmt>, <Parameter: incl=89.6 deg | keys: description, value, quantity, default_unit, limits, visible_if, copy_for, readonly, advanced, latexfmt>, <Parameter: q=0.11 | keys: description, value, quantity, default_unit, limits, visible_if, copy_for, readonly, advanced, latexfmt>, <Parameter: sma=2.3042870083368356 solRad | keys: description, value, quantity, default_unit, limits, visible_if, copy_for, readonly, advanced, latexfmt>, <Parameter: long_an=0.0 deg | keys: description, value, quantity, default_unit, limits, visible_if, copy_for, readonly, advanced, latexfmt>, <Parameter: asini=2.3042308544878742 solRad | keys: description, value, quantity, default_unit, limits, visible_if, copy_for, readonly, advanced, latexfmt>, <Parameter: ecosw=0.0 | keys: description, value, quantity, default_unit, limits, visible_if, copy_for, readonly, advanced, latexfmt>, <Parameter: esinw=0.0 | keys: description, value, quantity, default_unit, limits, visible_if, copy_for, readonly, advanced, latexfmt>, <Parameter: abun=0.0 | keys: description, value, quantity, default_unit, limits, visible_if, copy_for, readonly, advanced, latexfmt>, <Parameter: fillout_factor=0.7062202284937172 | keys: description, value, quantity, default_unit, limits, visible_if, copy_for, readonly, advanced, latexfmt>, <Parameter: pot=1.938824043735639 | keys: description, value, quantity, default_unit, limits, visible_if, copy_for, readonly, advanced, latexfmt>, <Parameter: pot_min=1.917769875703791 | keys: description, value, quantity, default_unit, limits, visible_if, copy_for, readonly, advanced, latexfmt>, <Parameter: pot_max=1.9894363758303923 | keys: description, value, quantity, default_unit, limits, visible_if, copy_for, readonly, advanced, latexfmt>, <Parameter: teffratio=0.9752699407871821 | keys: description, value, quantity, default_unit, limits, visible_if, copy_for, readonly, advanced, latexfmt>, <Parameter: requivratio=0.400684484810066 | keys: description, value, quantity, default_unit, limits, visible_if, copy_for, readonly, advanced, latexfmt>, <Parameter: requivsumfrac=0.8327685471675776 | keys: description, value, quantity, default_unit, limits, visible_if, copy_for, readonly, advanced, latexfmt>, <Parameter: sma=0.22835276659193865 solRad | keys: description, value, quantity, default_unit, limits, visible_if, copy_for, readonly, advanced, latexfmt>, <Parameter: asini=0.22834720179609563 solRad | keys: description, value, quantity, default_unit, limits, visible_if, copy_for, readonly, advanced, latexfmt>, <Parameter: sma=2.0759342417448967 solRad | keys: description, value, quantity, default_unit, limits, visible_if, copy_for, readonly, advanced, latexfmt>, <Parameter: asini=2.0758836526917785 solRad | keys: description, value, quantity, default_unit, limits, visible_if, copy_for, readonly, advanced, latexfmt>, <ConstraintParameter: {ebv@system} = {Av@system} / {Rv@system} (solar units) => 0.057741935483870965>, <ConstraintParameter: {freq@primary@component} = 6.283185 / {period@primary@component} (solar units) => 18.26619838199331 rad / d>, <ConstraintParameter: {logg@primary@component} = log10((({mass@primary@component} / ({requiv@primary@component} ** 2.000000)) * 2942.206218) * 9.319541) (solar units) => 4.261536510961695>, <ConstraintParameter: {irrad_frac_lost_bol@primary@component} = 1.000000 - {irrad_frac_refl_bol@primary@component} (solar units) => 0.5>, <ConstraintParameter: {freq@secondary@component} = 6.283185 / {period@secondary@component} (solar units) => 18.26619838199331 rad / d>, <ConstraintParameter: {logg@secondary@component} = log10((({mass@secondary@component} / ({requiv@secondary@component} ** 2.000000)) * 2942.206218) * 9.319541) (solar units) => 4.0973241438566115>, <ConstraintParameter: {irrad_frac_lost_bol@secondary@component} = 1.000000 - {irrad_frac_refl_bol@secondary@component} (solar units) => 0.5>, <ConstraintParameter: {asini@binary@component} = {sma@binary@component} * (sin({incl@binary@component})) (solar units) => 2.3042308544878742 solRad>, <ConstraintParameter: {t0_perpass@binary@component} = t0_supconj_to_perpass({t0_supconj@binary@component}, {period@binary@component}, {ecc@binary@component}, {per0@binary@component}, {dpdt@binary@component}, {dperdt@binary@component}, {t0@system}) (solar units) => 0.05400530000000002 d>, <ConstraintParameter: {t0_ref@binary@component} = t0_supconj_to_ref({t0_supconj@binary@component}, {period@binary@component}, {ecc@binary@component}, {per0@binary@component}, {dpdt@binary@component}, {dperdt@binary@component}, {t0@system}) (solar units) => 0.14 d>, <ConstraintParameter: {period_anom@binary@component} = {period@binary@component} / ((((-1.000000 * {period@binary@component}) * {dperdt@binary@component}) / 6.283185307179586231995926937088) + 1.000000000000000000000000000000) (solar units) => 0.3439788 d>, <ConstraintParameter: {mean_anom@binary@component} = (6.283185 * ({t0@system} - {t0_perpass@binary@component})) / {period@binary@component} (solar units) => -56.52065490519084 deg>, <ConstraintParameter: {ecosw@binary@component} = {ecc@binary@component} * (cos({per0@binary@component})) (solar units) => 0.0>, <ConstraintParameter: {esinw@binary@component} = {ecc@binary@component} * (sin({per0@binary@component})) (solar units) => 0.0>, <ConstraintParameter: {freq@binary@component} = 6.283185 / {period@binary@component} (solar units) => 18.26619838199331 rad / d>, <ConstraintParameter: {pot@contact_envelope@component} = requiv_to_pot_contact({requiv@primary@component}, {q@binary@component}, {sma@binary@component}, 1) (solar units) => 1.938824043735639>, <ConstraintParameter: {requiv@secondary@component} = pot_to_requiv_contact({pot@contact_envelope@component}, {q@binary@component}, {sma@binary@component}, 2) (solar units) => 0.5489377441897905 solRad>, <ConstraintParameter: {fillout_factor@contact_envelope@component} = pot_to_fillout_factor({q@binary@component}, {pot@contact_envelope@component}) (solar units) => 0.7062202284937172>, <ConstraintParameter: {pot_min@contact_envelope@component} = potential_contact_L23({q@binary@component}) (solar units) => 1.917769875703791>, <ConstraintParameter: {pot_max@contact_envelope@component} = potential_contact_L1({q@binary@component}) (solar units) => 1.9894363758303923>, <ConstraintParameter: {teffratio@binary@component} = {teff@secondary@component} / {teff@primary@component} (solar units) => 0.9752699407871821>, <ConstraintParameter: {requivratio@binary@component} = {requiv@secondary@component} / {requiv@primary@component} (solar units) => 0.400684484810066>, <ConstraintParameter: {requivsumfrac@binary@component} = ({requiv@primary@component} + {requiv@secondary@component}) / {sma@binary@component} (solar units) => 0.8327685471675776>, <ConstraintParameter: {sma@binary@component} = (((({mass@primary@component} * ({period@binary@component} ** 2.000000)) * ({q@binary@component} + 1.000000)) * 2942.206217504419328179210424423218) / 39.478418) ** (1./3) (solar units) => 2.3042870083368356 solRad>, <ConstraintParameter: {sma@primary@component} = {sma@binary@component} / ((1.000000 / {q@binary@component}) + 1.000000) (solar units) => 0.22835276659193865 solRad>, <ConstraintParameter: {asini@primary@component} = ({sma@binary@component} * (sin({incl@binary@component}))) / ((1.000000 / {q@binary@component}) + 1.000000) (solar units) => 0.22834720179609563 solRad>, <ConstraintParameter: {period@primary@component} = {period@binary@component} / {syncpar@primary@component} (solar units) => 0.3439788 d>, <ConstraintParameter: {incl@primary@component} = {incl@binary@component} + {pitch@primary@component} (solar units) => 89.6 deg>, <ConstraintParameter: {long_an@primary@component} = {long_an@binary@component} + {yaw@primary@component} (solar units) => 0.0 deg>, <ConstraintParameter: {requiv_max@primary@component} = requiv_contact_L23({q@binary@component}, {sma@binary@component}, 1) (solar units) => 1.3922159789270905 solRad>, <ConstraintParameter: {requiv_min@primary@component} = requiv_contact_L1({q@binary@component}, {sma@binary@component}, 1) (solar units) => 1.3199515362463703 solRad>, <ConstraintParameter: {mass@secondary@component} = (39.478418 * ({sma@binary@component} ** 3.000000)) / ((({period@binary@component} ** 2.000000) * ((1.000000 / {q@binary@component}) + 1.000000)) * 2942.206217504419328179210424423218) (solar units) => 0.1375 solMass>, <ConstraintParameter: {sma@secondary@component} = {sma@binary@component} / ({q@binary@component} + 1.000000) (solar units) => 2.0759342417448967 solRad>, <ConstraintParameter: {asini@secondary@component} = ({sma@binary@component} * (sin({incl@binary@component}))) / ({q@binary@component} + 1.000000) (solar units) => 2.0758836526917785 solRad>, <ConstraintParameter: {period@secondary@component} = {period@binary@component} / {syncpar@secondary@component} (solar units) => 0.3439788 d>, <ConstraintParameter: {incl@secondary@component} = {incl@binary@component} + {pitch@secondary@component} (solar units) => 89.6 deg>, <ConstraintParameter: {long_an@secondary@component} = {long_an@binary@component} + {yaw@secondary@component} (solar units) => 0.0 deg>, <ConstraintParameter: {requiv_max@secondary@component} = requiv_contact_L23({q@binary@component}, {sma@binary@component}, 2) (solar units) => 0.5791393958335169 solRad>, <ConstraintParameter: {requiv_min@secondary@component} = requiv_contact_L1({q@binary@component}, {sma@binary@component}, 2) (solar units) => 0.4866922449685057 solRad>, <Parameter: sample_from=[] | keys: description, choices, value, visible_if, readonly, copy_for, latexfmt>, <Parameter: sample_from_combine=first | keys: description, choices, value, visible_if, copy_for, readonly, advanced, latexfmt>, <Parameter: sample_num=10 | keys: description, value, limits, visible_if, copy_for, readonly, advanced, latexfmt>, <Parameter: sample_mode=1-sigma | keys: description, choices, value, visible_if, copy_for, readonly, advanced, latexfmt>, <Parameter: expose_samples=True | keys: description, value, visible_if, copy_for, readonly, advanced, latexfmt>, <Parameter: expose_failed=True | keys: description, value, visible_if, copy_for, readonly, advanced, latexfmt>, <Parameter: comments= | keys: description, value, visible_if, copy_for, readonly, advanced, latexfmt>, <Parameter: use_server=none | keys: description, choices, value, visible_if, copy_for, readonly, advanced, latexfmt>, <Parameter: enabled=True | keys: description, value, visible_if, copy_for, readonly, advanced, latexfmt>, <Parameter: enabled=True | keys: description, value, visible_if, copy_for, readonly, advanced, latexfmt>, <Parameter: gp_exclude_phases_enabled=True | keys: description, value, visible_if, copy_for, readonly, advanced, latexfmt>, <Parameter: gp_exclude_phases=[] | keys: description, value, default_unit, visible_if, required_shape, copy_for, readonly, advanced, latexfmt>, <Parameter: dynamics_method=keplerian | keys: description, choices, value, visible_if, copy_for, readonly, advanced, latexfmt>, <Parameter: ltte=False | keys: description, value, visible_if, copy_for, readonly, advanced, latexfmt>, <Parameter: irrad_method=horvat | keys: description, choices, value, visible_if, copy_for, readonly, advanced, latexfmt>, <Parameter: boosting_method=none | keys: description, choices, value, visible_if, copy_for, readonly, advanced, latexfmt>, <Parameter: mesh_method=marching | keys: description, choices, value, visible_if, copy_for, readonly, advanced, latexfmt>, <Parameter: ntriangles=1500 | keys: description, value, limits, visible_if, copy_for, readonly, advanced, latexfmt>, <Parameter: distortion_method=roche | keys: description, choices, value, visible_if, copy_for, readonly, advanced, latexfmt>, <Parameter: eclipse_method=native | keys: description, choices, value, visible_if, copy_for, readonly, advanced, latexfmt>, <Parameter: horizon_method=boolean | keys: description, choices, value, visible_if, copy_for, readonly, advanced, latexfmt>, <Parameter: atm=ck2004 | keys: description, choices, value, visible_if, copy_for, readonly, advanced, latexfmt>, <Parameter: fti_method=none | keys: description, choices, value, visible_if, copy_for, readonly, advanced, latexfmt>, <Parameter: fti_oversample=5 | keys: description, value, limits, visible_if, copy_for, readonly, advanced, latexfmt>, <Parameter: rv_method=flux-weighted | keys: description, choices, value, visible_if, copy_for, readonly, advanced, latexfmt>, <Parameter: rv_grav=False | keys: description, value, visible_if, copy_for, readonly, advanced, latexfmt>, <Parameter: mesh_method=marching | keys: description, choices, value, visible_if, copy_for, readonly, advanced, latexfmt>, <Parameter: mesh_method=marching | keys: description, choices, value, visible_if, copy_for, readonly, advanced, latexfmt>, <Parameter: mesh_method=marching | keys: description, choices, value, visible_if, copy_for, readonly, advanced, latexfmt>, <Parameter: ntriangles=1500 | keys: description, value, limits, visible_if, copy_for, readonly, advanced, latexfmt>, <Parameter: ntriangles=1500 | keys: description, value, limits, visible_if, copy_for, readonly, advanced, latexfmt>, <Parameter: ntriangles=3000 | keys: description, value, limits, visible_if, copy_for, readonly, advanced, latexfmt>, <Parameter: distortion_method=roche | keys: description, choices, value, visible_if, copy_for, readonly, advanced, latexfmt>, <Parameter: distortion_method=roche | keys: description, choices, value, visible_if, copy_for, readonly, advanced, latexfmt>, <Parameter: atm=ck2004 | keys: description, choices, value, visible_if, copy_for, readonly, advanced, latexfmt>, <Parameter: atm=ck2004 | keys: description, choices, value, visible_if, copy_for, readonly, advanced, latexfmt>, <Parameter: default_time_source=None | keys: description, choices, value, visible_if, copy_for, readonly, advanced, latexfmt>, <Parameter: default_time=0.0 d | keys: description, value, quantity, default_unit, limits, visible_if, copy_for, readonly, advanced, latexfmt>, <Parameter: latex_repr= | keys: description, value, visible_if, copy_for, readonly, advanced, latexfmt>, <Parameter: color=blue | keys: description, choices, value, visible_if, copy_for, readonly, advanced, latexfmt>, <Parameter: marker=. | keys: description, choices, value, visible_if, copy_for, readonly, advanced, latexfmt>, <Parameter: linestyle=solid | keys: description, choices, value, visible_if, copy_for, readonly, advanced, latexfmt>, <Parameter: latex_repr= | keys: description, value, visible_if, copy_for, readonly, advanced, latexfmt>, <Parameter: color=orange | keys: description, choices, value, visible_if, copy_for, readonly, advanced, latexfmt>, <Parameter: marker=o | keys: description, choices, value, visible_if, copy_for, readonly, advanced, latexfmt>, <Parameter: linestyle=dashed | keys: description, choices, value, visible_if, copy_for, readonly, advanced, latexfmt>, <Parameter: latex_repr= | keys: description, value, visible_if, copy_for, readonly, advanced, latexfmt>, <Parameter: latex_repr= | keys: description, value, visible_if, copy_for, readonly, advanced, latexfmt>, <Parameter: phoebe_version=2.4.11 | keys: description, value, visible_if, copy_for, readonly, advanced, latexfmt>, <Parameter: dict_filter={} | keys: description, value, visible_if, copy_for, readonly, advanced, latexfmt>, <Parameter: dict_set_all=False | keys: description, value, visible_if, copy_for, readonly, advanced, latexfmt>, <Parameter: run_checks_compute=['*'] | keys: description, choices, value, visible_if, readonly, copy_for, latexfmt>, <Parameter: run_checks_solver=['*'] | keys: description, choices, value, visible_if, readonly, copy_for, latexfmt>, <Parameter: run_checks_solution=['*'] | keys: description, choices, value, visible_if, readonly, copy_for, latexfmt>, <Parameter: run_checks_figure=['*'] | keys: description, choices, value, visible_if, readonly, copy_for, latexfmt>, <Parameter: run_checks_server=['*'] | keys: description, choices, value, visible_if, readonly, copy_for, latexfmt>, <Parameter: auto_add_figure=True | keys: description, value, visible_if, copy_for, readonly, advanced, latexfmt>, <Parameter: auto_remove_figure=True | keys: description, value, visible_if, copy_for, readonly, advanced, latexfmt>, <Parameter: web_client=False | keys: description, value, visible_if, copy_for, readonly, advanced, latexfmt>, <Parameter: web_client_url=ui.phoebe-project.org | keys: description, value, visible_if, copy_for, readonly, advanced, latexfmt>, <Parameter: times=[2460257.         2466265.51401954 2472274.02803907 ...
+ 8450745.47747693 8456753.99149646 8462762.505516  ] d | keys: description, value, default_unit, visible_if, required_shape, copy_for, readonly, advanced, latexfmt>, <Parameter: fluxes=[] W / m2 | keys: description, value, default_unit, visible_if, required_shape, copy_for, readonly, advanced, latexfmt>, <Parameter: ld_mode=lookup | keys: description, choices, value, visible_if, copy_for, readonly, advanced, latexfmt>, <Parameter: ld_func=logarithmic | keys: description, choices, value, visible_if, copy_for, readonly, advanced, latexfmt>, <Parameter: ld_coeffs_source=auto | keys: description, choices, value, visible_if, copy_for, readonly, advanced, latexfmt>, <Parameter: ld_coeffs=[0.5 0.5] | keys: description, value, default_unit, visible_if, required_shape, copy_for, readonly, advanced, latexfmt>, <Parameter: passband=SDSS:g | keys: description, choices, value, visible_if, copy_for, readonly, advanced, latexfmt>, <Parameter: intens_weighting=energy | keys: description, choices, value, visible_if, copy_for, readonly, advanced, latexfmt>, <Parameter: compute_times=[] d | keys: description, value, default_unit, visible_if, required_shape, copy_for, readonly, advanced, latexfmt>, <Parameter: compute_phases=[] | keys: description, value, default_unit, visible_if, required_shape, copy_for, readonly, advanced, latexfmt>, <Parameter: phases_period=period | keys: description, choices, value, visible_if, copy_for, readonly, advanced, latexfmt>, <Parameter: phases_dpdt=dpdt | keys: description, choices, value, visible_if, copy_for, readonly, advanced, latexfmt>, <Parameter: phases_t0=t0_supconj | keys: description, choices, value, visible_if, copy_for, readonly, advanced, latexfmt>, <Parameter: mask_enabled=True | keys: description, value, visible_if, copy_for, readonly, advanced, latexfmt>, <Parameter: mask_phases=[] | keys: description, value, default_unit, visible_if, required_shape, copy_for, readonly, advanced, latexfmt>, <Parameter: solver_times=auto | keys: description, choices, value, visible_if, copy_for, readonly, advanced, latexfmt>, <Parameter: sigmas=[] W / m2 | keys: description, value, default_unit, visible_if, required_shape, copy_for, readonly, advanced, latexfmt>, <Parameter: sigmas_lnf=-inf | keys: description, value, quantity, default_unit, limits, visible_if, copy_for, readonly, advanced, latexfmt>, <Parameter: pblum_mode=component-coupled | keys: description, choices, value, visible_if, copy_for, readonly, advanced, latexfmt>, <Parameter: pblum_component=primary | keys: description, choices, value, visible_if, copy_for, readonly, advanced, latexfmt>, <Parameter: pblum=12.566370614359172 W | keys: description, value, quantity, default_unit, limits, visible_if, copy_for, readonly, advanced, latexfmt>, <Parameter: pblum_dataset= | keys: description, choices, value, visible_if, copy_for, readonly, advanced, latexfmt>, <Parameter: pbflux=1.0 W / m2 | keys: description, value, quantity, default_unit, limits, visible_if, copy_for, readonly, advanced, latexfmt>, <Parameter: l3_mode=flux | keys: description, choices, value, visible_if, copy_for, readonly, advanced, latexfmt>, <Parameter: l3=0.0 W / m2 | keys: description, value, quantity, default_unit, limits, visible_if, copy_for, readonly, advanced, latexfmt>, <Parameter: l3_frac=0.0 | keys: description, value, quantity, default_unit, limits, visible_if, copy_for, readonly, advanced, latexfmt>, <Parameter: exptime=0.0 s | keys: description, value, quantity, default_unit, limits, visible_if, copy_for, readonly, advanced, latexfmt>, <Parameter: enabled=True | keys: description, value, visible_if, copy_for, readonly, advanced, latexfmt>, <Parameter: gp_exclude_phases_enabled=True | keys: description, value, visible_if, copy_for, readonly, advanced, latexfmt>, <Parameter: gp_exclude_phases=[] | keys: description, value, default_unit, visible_if, required_shape, copy_for, readonly, advanced, latexfmt>, <Parameter: fti_method=none | keys: description, choices, value, visible_if, copy_for, readonly, advanced, latexfmt>, <Parameter: fti_oversample=5 | keys: description, value, limits, visible_if, copy_for, readonly, advanced, latexfmt>, <Parameter: ld_mode=lookup | keys: description, choices, value, visible_if, copy_for, readonly, advanced, latexfmt>, <Parameter: ld_mode=lookup | keys: description, choices, value, visible_if, copy_for, readonly, advanced, latexfmt>, <Parameter: ld_func=logarithmic | keys: description, choices, value, visible_if, copy_for, readonly, advanced, latexfmt>, <Parameter: ld_func=logarithmic | keys: description, choices, value, visible_if, copy_for, readonly, advanced, latexfmt>, <Parameter: ld_coeffs_source=auto | keys: description, choices, value, visible_if, copy_for, readonly, advanced, latexfmt>, <Parameter: ld_coeffs_source=auto | keys: description, choices, value, visible_if, copy_for, readonly, advanced, latexfmt>, <Parameter: ld_coeffs=[0.85249159 0.1771738 ] | keys: description, value, default_unit, visible_if, required_shape, copy_for, readonly, advanced, latexfmt>, <Parameter: ld_coeffs=[0.85894328 0.1598301 ] | keys: description, value, default_unit, visible_if, required_shape, copy_for, readonly, advanced, latexfmt>, <Parameter: pblum=12.566370614359172 W | keys: description, value, quantity, default_unit, limits, visible_if, copy_for, readonly, advanced, latexfmt>, <Parameter: pblum=12.566370614359172 W | keys: description, value, quantity, default_unit, limits, visible_if, copy_for, readonly, advanced, latexfmt>, <ConstraintParameter: {compute_phases@lc01@dataset} = times_to_phases({compute_times@lc01@dataset}, {phases_period@lc01@dataset}, {period@binary@component}, {period_anom@binary@component}, {phases_dpdt@lc01@dataset}, {dpdt@binary@component}, {phases_t0@lc01@dataset}, {t0_supconj@binary@component}, {t0_perpass@binary@component}, {t0_ref@binary@component}) (solar units) => []>, <Parameter: latex_repr= | keys: description, value, visible_if, copy_for, readonly, advanced, latexfmt>, <Parameter: color=black | keys: description, choices, value, visible_if, copy_for, readonly, advanced, latexfmt>, <Parameter: marker=. | keys: description, choices, value, visible_if, copy_for, readonly, advanced, latexfmt>, <Parameter: linestyle=solid | keys: description, choices, value, visible_if, copy_for, readonly, advanced, latexfmt>, <Parameter: contexts=['*'] | keys: description, choices, value, visible_if, readonly, copy_for, latexfmt>, <Parameter: datasets=['*'] | keys: description, choices, value, visible_if, readonly, copy_for, latexfmt>, <Parameter: models=['*'] | keys: description, choices, value, visible_if, readonly, copy_for, latexfmt>, <Parameter: x=times | keys: description, choices, value, visible_if, copy_for, readonly, advanced, latexfmt>, <Parameter: period=period | keys: description, choices, value, visible_if, copy_for, readonly, advanced, latexfmt>, <Parameter: dpdt=dpdt | keys: description, choices, value, visible_if, copy_for, readonly, advanced, latexfmt>, <Parameter: t0=t0_supconj | keys: description, choices, value, visible_if, copy_for, readonly, advanced, latexfmt>, <Parameter: y=fluxes | keys: description, choices, value, visible_if, copy_for, readonly, advanced, latexfmt>, <Parameter: xlabel_source=auto | keys: description, choices, value, visible_if, copy_for, readonly, advanced, latexfmt>, <Parameter: xlabel=xlabel | keys: description, value, visible_if, copy_for, readonly, advanced, latexfmt>, <Parameter: xunit_source=auto | keys: description, choices, value, visible_if, copy_for, readonly, advanced, latexfmt>, <Parameter: xlim_source=auto | keys: description, choices, value, visible_if, copy_for, readonly, advanced, latexfmt>, <Parameter: xunit=d | keys: description, value, visible_if, copy_for, readonly, advanced, latexfmt>, <Parameter: xlim=[] d | keys: description, value, default_unit, visible_if, required_shape, copy_for, readonly, advanced, latexfmt>, <Parameter: xunit= | keys: description, value, visible_if, copy_for, readonly, advanced, latexfmt>, <Parameter: xlim=[] | keys: description, value, default_unit, visible_if, required_shape, copy_for, readonly, advanced, latexfmt>, <Parameter: ylabel_source=auto | keys: description, choices, value, visible_if, copy_for, readonly, advanced, latexfmt>, <Parameter: ylabel=ylabel | keys: description, value, visible_if, copy_for, readonly, advanced, latexfmt>, <Parameter: yunit_source=auto | keys: description, choices, value, visible_if, copy_for, readonly, advanced, latexfmt>, <Parameter: ylim_source=auto | keys: description, choices, value, visible_if, copy_for, readonly, advanced, latexfmt>, <Parameter: yunit=W / m2 | keys: description, value, visible_if, copy_for, readonly, advanced, latexfmt>, <Parameter: ylim=[] W / m2 | keys: description, value, default_unit, visible_if, required_shape, copy_for, readonly, advanced, latexfmt>, <Parameter: color_source=model | keys: description, choices, value, visible_if, copy_for, readonly, advanced, latexfmt>, <Parameter: color=black | keys: description, choices, value, visible_if, copy_for, readonly, advanced, latexfmt>, <Parameter: marker_source=manual | keys: description, choices, value, visible_if, copy_for, readonly, advanced, latexfmt>, <Parameter: marker=. | keys: description, choices, value, visible_if, copy_for, readonly, advanced, latexfmt>, <Parameter: linestyle_source=manual | keys: description, choices, value, visible_if, copy_for, readonly, advanced, latexfmt>, <Parameter: linestyle=solid | keys: description, choices, value, visible_if, copy_for, readonly, advanced, latexfmt>, <Parameter: legend=True | keys: description, value, visible_if, copy_for, readonly, advanced, latexfmt>, <Parameter: uncover=False | keys: description, value, visible_if, copy_for, readonly, advanced, latexfmt>, <Parameter: highlight=True | keys: description, value, visible_if, copy_for, readonly, advanced, latexfmt>, <Parameter: time_source=default | keys: description, choices, value, visible_if, copy_for, readonly, advanced, latexfmt>, <Parameter: time=0.0 d | keys: description, value, quantity, default_unit, limits, visible_if, copy_for, readonly, advanced, latexfmt>, <Parameter: times=[2460257.         2466265.51401954 2472274.02803907 ...
+ 8450745.47747693 8456753.99149646 8462762.505516  ] d | keys: description, value, default_unit, visible_if, required_shape, copy_for, readonly, advanced, latexfmt>, <Parameter: fluxes=[1.11815837 0.82200231 1.0111771  ... 1.12071522
+ 0.91956241 0.92868997] W / m2 | keys: description, value, default_unit, visible_if, required_shape, copy_for, readonly, advanced, latexfmt>, <Parameter: comments= | keys: description, value, visible_if, copy_for, readonly, advanced, latexfmt>, <Parameter: color=blue | keys: description, choices, value, visible_if, copy_for, readonly, advanced, latexfmt>, <Parameter: linestyle=solid | keys: description, choices, value, visible_if, copy_for, readonly, advanced, latexfmt>], '_is_client': False, '_client_allow_disconnect': False, '_waiting_on_server': False, '_server_changes': None, '_server_secret': None, '_server_clients': [], '_within_solver': False, '_bundle': <PHOEBE Bundle: 193 parameters | contexts: setting, system, component, dataset, model, compute, constraint, figure>, '_filter': {}, '_qualifier': None, '_time': None, '_component': None, '_dataset': '_default', '_figure': None, '_server': None, '_constraint': None, '_distribution': None, '_compute': 'phoebe01', '_model': None, '_solver': None, '_solution': None, '_kind': None, '_context': None, '_next_field': 'context', '_feature': '_default', '_import_before_v211': False, '_hierarchy_param': <HierarchyParameter: orbit:binary(star:primary, star:secondary, envelope:contact_envelope)>, '_af_figure': None, '_delayed_constraints': [], '_failed_constraints': [], '_mplcolorcyclers': {'default': <colorcycler | cycle: ['black', 'blue', 'orange', 'green', 'red', 'purple', 'ping', 'pink', 'yellow'] | used: ['black']>, 'component': <colorcycler | cycle: ['blue', 'orange', 'green', 'red', 'purple', 'ping', 'pink', 'yellow'] | used: []>, 'dataset': <colorcycler | cycle: ['black', 'blue', 'orange', 'green', 'red', 'purple', 'ping', 'pink', 'yellow'] | used: ['black']>, 'model': <colorcycler | cycle: ['blue', 'orange', 'green', 'red', 'purple', 'ping', 'pink', 'yellow'] | used: ['blue']>}, '_mplmarkercyclers': {'default': <markercycler | cycle: ['.', 'o', '+', 's', '*', 'x', 'v', '^', '<', '>', 'p', 'h', 'o', 'D'] | used: ['.']>, 'component': <markercycler | cycle: ['.', 'o', '+', 's', '*', 'x', 'v', '^', '<', '>', 'p', 'h', 'o', 'D'] | used: []>, 'dataset': <markercycler | cycle: ['.', 'o', '+', 's', '*', 'x', 'v', '^', '<', '>', 'p', 'h', 'o', 'D'] | used: ['.']>, 'model': <markercycler | cycle: ['.', 'o', '+', 's', '*', 'x', 'v', '^', '<', '>', 'p', 'h', 'o', 'D'] | used: []>}, '_mpllinestylecyclers': {'default': <linestylecycler | cycle: ['solid', 'dashed', 'dotted', 'dashdot'] | used: ['solid']>, 'component': <linestylecycler | cycle: ['solid', 'dashed', 'dotted', 'dashdot'] | used: []>, 'dataset': <linestylecycler | cycle: ['solid', 'dashed', 'dotted', 'dashdot'] | used: ['solid']>, 'model': <linestylecycler | cycle: ['solid', 'dashed', 'dotted', 'dashdot'] | used: ['solid']>}}
+Parameter: t0@system
+                       Qualifier: t0
+                     Description: Time at which all values are provided.  For values with time-derivatives, this defines their zero-point.
+                           Value: 0.0 d
+                  Constrained by: 
+                      Constrains: t0_perpass@binary@component, t0_ref@binary@component, mean_anom@binary@component
+                      Related to: t0_supconj@binary@component, period@binary@component, ecc@binary@component, per0@binary@component, dpdt@binary@component, dperdt@binary@component, t0_perpass@binary@component, t0_ref@binary@component, mean_anom@binary@component
+
+Parameter: ra@system
+                       Qualifier: ra
+                     Description: Right ascension
+                           Value: 0.0 deg
+                  Constrained by: 
+                      Constrains: None
+                      Related to: None
+
+Parameter: dec@system
+                       Qualifier: dec
+                     Description: Declination
+                           Value: 0.0 deg
+                  Constrained by: 
+                      Constrains: None
+                      Related to: None
+
+Parameter: distance@system
+                       Qualifier: distance
+                     Description: Distance to the system
+                           Value: 1.0 m
+                  Constrained by: 
+                      Constrains: None
+                      Related to: None
+
+Parameter: vgamma@system
+                       Qualifier: vgamma
+                     Description: Constant barycentric systemic velocity (in the direction of positive RV or negative vz)
+                           Value: 0.0 km / s
+                  Constrained by: 
+                      Constrains: None
+                      Related to: None
+
+Parameter: ebv@system
+                       Qualifier: ebv
+                     Description: Extinction E(B-V)
+                           Value: 0.057741935483870965
+                  Constrained by: Av@system, Rv@system
+                      Constrains: None
+                      Related to: Av@system, Rv@system
+
+Parameter: Av@system
+                       Qualifier: Av
+                     Description: Extinction Av
+                           Value: 0.179
+                  Constrained by: 
+                      Constrains: ebv@system
+                      Related to: Rv@system, ebv@system
+
+Parameter: Rv@system
+                       Qualifier: Rv
+                     Description: Extinction law parameter
+                           Value: 3.1
+                  Constrained by: 
+                      Constrains: ebv@system
+                      Related to: Av@system, ebv@system
+
+
+    orbit:binary
+    
+        star:primary
+        star:secondary
+        envelope:contact_envelope
+    
+
+Parameter: requiv@primary@component
+                       Qualifier: requiv
+                     Description: Equivalent radius
+                           Value: 1.37 solRad
+                  Constrained by: 
+                      Constrains: logg@primary@component, pot@contact_envelope@component, requivratio@binary@component, requivsumfrac@binary@component
+                      Related to: mass@primary@component, logg@primary@component, q@binary@component, sma@binary@component, pot@contact_envelope@component, requiv@secondary@component, requivratio@binary@component, requivsumfrac@binary@component
+
+Parameter: requiv_max@primary@component
+                       Qualifier: requiv_max
+                     Description: Critical (maximum) value of the equivalent radius for the given morphology
+                           Value: 1.3922159789270905 solRad
+                  Constrained by: q@binary@component, sma@binary@component
+                      Constrains: None
+                      Related to: q@binary@component, sma@binary@component
+
+Parameter: requiv_min@primary@component
+                       Qualifier: requiv_min
+                     Description: Critical (minimum) value of the equivalent radius for the given morphology
+                           Value: 1.3199515362463703 solRad
+                  Constrained by: q@binary@component, sma@binary@component
+                      Constrains: None
+                      Related to: q@binary@component, sma@binary@component
+                 Only visible if: hierarchy.is_contact_binary:True
+
+Parameter: teff@primary@component
+                       Qualifier: teff
+                     Description: Mean effective temperature
+                           Value: 5742.0 K
+                  Constrained by: 
+                      Constrains: teffratio@binary@component
+                      Related to: teff@secondary@component, teffratio@binary@component
+
+Parameter: abun@primary@component
+                       Qualifier: abun
+                     Description: Abundance/Metallicity
+                           Value: 0.0
+                  Constrained by: 
+                      Constrains: None
+                      Related to: None
+                 Only visible if: hierarchy.is_contact_binary:False
+
+Parameter: logg@primary@component
+                       Qualifier: logg
+                     Description: logg at requiv
+                           Value: 4.261536510961695
+                  Constrained by: mass@primary@component, requiv@primary@component
+                      Constrains: None
+                      Related to: mass@primary@component, requiv@primary@component
+
+Parameter: syncpar@primary@component
+                       Qualifier: syncpar
+                     Description: Synchronicity parameter
+                           Value: 1.0
+                  Constrained by: 
+                      Constrains: period@primary@component
+                      Related to: period@binary@component, period@primary@component
+                 Only visible if: hierarchy.is_binary:True
+
+Parameter: period@primary@component
+                       Qualifier: period
+                     Description: Rotation period (wrt the sky)
+                           Value: 0.3439788 d
+                  Constrained by: period@binary@component, syncpar@primary@component
+                      Constrains: freq@primary@component
+                      Related to: freq@primary@component, period@binary@component, syncpar@primary@component
+
+Parameter: freq@primary@component
+                       Qualifier: freq
+                     Description: Rotation frequency (wrt the sky)
+                           Value: 18.26619838199331 rad / d
+                  Constrained by: period@primary@component
+                      Constrains: None
+                      Related to: period@primary@component
+
+Parameter: pitch@primary@component
+                       Qualifier: pitch
+                     Description: Pitch of the stellar rotation axis wrt the orbital inclination
+                           Value: 0.0 deg
+                  Constrained by: 
+                      Constrains: incl@primary@component
+                      Related to: incl@binary@component, incl@primary@component
+                 Only visible if: hierarchy.is_contact_binary:False,hierarchy.is_binary:True
+
+Parameter: yaw@primary@component
+                       Qualifier: yaw
+                     Description: Yaw of the stellar rotation axis wrt the orbital longitude of ascending node
+                           Value: 0.0 deg
+                  Constrained by: 
+                      Constrains: long_an@primary@component
+                      Related to: long_an@binary@component, long_an@primary@component
+                 Only visible if: hierarchy.is_contact_binary:False,hierarchy.is_binary:True
+
+Parameter: incl@primary@component
+                       Qualifier: incl
+                     Description: Inclination of the stellar rotation axis
+                           Value: 89.6 deg
+                  Constrained by: incl@binary@component, pitch@primary@component
+                      Constrains: None
+                      Related to: incl@binary@component, pitch@primary@component
+                 Only visible if: hierarchy.is_contact_binary:False
+
+Parameter: long_an@primary@component
+                       Qualifier: long_an
+                     Description: Longitude of the ascending node (ie. equator) of the star
+                           Value: 0.0 deg
+                  Constrained by: long_an@binary@component, yaw@primary@component
+                      Constrains: None
+                      Related to: long_an@binary@component, yaw@primary@component
+                 Only visible if: hierarchy.is_contact_binary:False
+
+Parameter: gravb_bol@primary@component
+                       Qualifier: gravb_bol
+                     Description: Bolometric gravity brightening
+                           Value: 0.32
+                  Constrained by: 
+                      Constrains: None
+                      Related to: None
+
+Parameter: irrad_frac_refl_bol@primary@component
+                       Qualifier: irrad_frac_refl_bol
+                     Description: ratio of incident bolometric light that is used for reflection/irradiation (heating without redistribution)
+                           Value: 0.5
+                  Constrained by: 
+                      Constrains: irrad_frac_lost_bol@primary@component
+                      Related to: irrad_frac_lost_bol@primary@component
+
+Parameter: irrad_frac_lost_bol@primary@component
+                       Qualifier: irrad_frac_lost_bol
+                     Description: ratio of incident bolometric light that is lost/ignored
+                           Value: 0.5
+                  Constrained by: irrad_frac_refl_bol@primary@component
+                      Constrains: None
+                      Related to: irrad_frac_refl_bol@primary@component
+
+Parameter: ld_mode_bol@primary@component
+                       Qualifier: ld_mode_bol
+                     Description: Mode to use for bolometric limb-darkening (used only for irradiation).
+                           Value: lookup
+                         Choices: lookup, manual
+                  Constrained by: 
+                      Constrains: None
+                      Related to: None
+
+Parameter: ld_func_bol@primary@component
+                       Qualifier: ld_func_bol
+                     Description: Bolometric limb darkening model (used only for irradiation).
+                           Value: logarithmic
+                         Choices: linear, logarithmic, quadratic, square_root, power
+                  Constrained by: 
+                      Constrains: None
+                      Related to: None
+
+Parameter: ld_coeffs_source_bol@primary@component
+                       Qualifier: ld_coeffs_source_bol
+                     Description: Source for bolometric limb darkening coefficients (used only for irradiation; 'auto' to interpolate from the applicable table according to the 'atm' parameter, or the name of a specific atmosphere table)
+                           Value: auto
+                         Choices: auto, phoenix, ck2004
+                  Constrained by: 
+                      Constrains: None
+                      Related to: None
+                 Only visible if: ld_mode_bol:lookup
+
+Parameter: ld_coeffs_bol@primary@component
+                       Qualifier: ld_coeffs_bol
+                     Description: Bolometric limb darkening coefficients (used only for irradiation).
+                           Value: [0.71017789 0.28721971]
+                  Constrained by: 
+                      Constrains: None
+                      Related to: None
+                 Only visible if: ld_mode_bol:manual
+
+Parameter: mass@primary@component
+                       Qualifier: mass
+                     Description: Mass
+                           Value: 1.25 solMass
+                  Constrained by: 
+                      Constrains: logg@primary@component, mass@secondary@component
+                      Related to: requiv@primary@component, logg@primary@component, sma@binary@component, period@binary@component, q@binary@component, mass@secondary@component
+
+Parameter: requiv@secondary@component
+                       Qualifier: requiv
+                     Description: Equivalent radius
+                           Value: 0.5489377441897905 solRad
+                  Constrained by: pot@contact_envelope@component, q@binary@component, sma@binary@component
+                      Constrains: logg@secondary@component, requivratio@binary@component, requivsumfrac@binary@component
+                      Related to: mass@secondary@component, logg@secondary@component, requiv@primary@component, requivratio@binary@component, sma@binary@component, requivsumfrac@binary@component, pot@contact_envelope@component, q@binary@component
+
+Parameter: requiv_max@secondary@component
+                       Qualifier: requiv_max
+                     Description: Critical (maximum) value of the equivalent radius for the given morphology
+                           Value: 0.5791393958335169 solRad
+                  Constrained by: q@binary@component, sma@binary@component
+                      Constrains: None
+                      Related to: q@binary@component, sma@binary@component
+
+Parameter: requiv_min@secondary@component
+                       Qualifier: requiv_min
+                     Description: Critical (minimum) value of the equivalent radius for the given morphology
+                           Value: 0.4866922449685057 solRad
+                  Constrained by: q@binary@component, sma@binary@component
+                      Constrains: None
+                      Related to: q@binary@component, sma@binary@component
+                 Only visible if: hierarchy.is_contact_binary:True
+
+Parameter: teff@secondary@component
+                       Qualifier: teff
+                     Description: Mean effective temperature
+                           Value: 5600.0 K
+                  Constrained by: 
+                      Constrains: teffratio@binary@component
+                      Related to: teff@primary@component, teffratio@binary@component
+
+Parameter: abun@secondary@component
+                       Qualifier: abun
+                     Description: Abundance/Metallicity
+                           Value: 0.0
+                  Constrained by: 
+                      Constrains: None
+                      Related to: None
+                 Only visible if: hierarchy.is_contact_binary:False
+
+Parameter: logg@secondary@component
+                       Qualifier: logg
+                     Description: logg at requiv
+                           Value: 4.0973241438566115
+                  Constrained by: mass@secondary@component, requiv@secondary@component
+                      Constrains: None
+                      Related to: mass@secondary@component, requiv@secondary@component
+
+Parameter: syncpar@secondary@component
+                       Qualifier: syncpar
+                     Description: Synchronicity parameter
+                           Value: 1.0
+                  Constrained by: 
+                      Constrains: period@secondary@component
+                      Related to: period@binary@component, period@secondary@component
+                 Only visible if: hierarchy.is_binary:True
+
+Parameter: period@secondary@component
+                       Qualifier: period
+                     Description: Rotation period (wrt the sky)
+                           Value: 0.3439788 d
+                  Constrained by: period@binary@component, syncpar@secondary@component
+                      Constrains: freq@secondary@component
+                      Related to: freq@secondary@component, period@binary@component, syncpar@secondary@component
+
+Parameter: freq@secondary@component
+                       Qualifier: freq
+                     Description: Rotation frequency (wrt the sky)
+                           Value: 18.26619838199331 rad / d
+                  Constrained by: period@secondary@component
+                      Constrains: None
+                      Related to: period@secondary@component
+
+Parameter: pitch@secondary@component
+                       Qualifier: pitch
+                     Description: Pitch of the stellar rotation axis wrt the orbital inclination
+                           Value: 0.0 deg
+                  Constrained by: 
+                      Constrains: incl@secondary@component
+                      Related to: incl@binary@component, incl@secondary@component
+                 Only visible if: hierarchy.is_contact_binary:False,hierarchy.is_binary:True
+
+Parameter: yaw@secondary@component
+                       Qualifier: yaw
+                     Description: Yaw of the stellar rotation axis wrt the orbital longitude of ascending node
+                           Value: 0.0 deg
+                  Constrained by: 
+                      Constrains: long_an@secondary@component
+                      Related to: long_an@binary@component, long_an@secondary@component
+                 Only visible if: hierarchy.is_contact_binary:False,hierarchy.is_binary:True
+
+Parameter: incl@secondary@component
+                       Qualifier: incl
+                     Description: Inclination of the stellar rotation axis
+                           Value: 89.6 deg
+                  Constrained by: incl@binary@component, pitch@secondary@component
+                      Constrains: None
+                      Related to: incl@binary@component, pitch@secondary@component
+                 Only visible if: hierarchy.is_contact_binary:False
+
+Parameter: long_an@secondary@component
+                       Qualifier: long_an
+                     Description: Longitude of the ascending node (ie. equator) of the star
+                           Value: 0.0 deg
+                  Constrained by: long_an@binary@component, yaw@secondary@component
+                      Constrains: None
+                      Related to: long_an@binary@component, yaw@secondary@component
+                 Only visible if: hierarchy.is_contact_binary:False
+
+Parameter: gravb_bol@secondary@component
+                       Qualifier: gravb_bol
+                     Description: Bolometric gravity brightening
+                           Value: 0.32
+                  Constrained by: 
+                      Constrains: None
+                      Related to: None
+
+Parameter: irrad_frac_refl_bol@secondary@component
+                       Qualifier: irrad_frac_refl_bol
+                     Description: ratio of incident bolometric light that is used for reflection/irradiation (heating without redistribution)
+                           Value: 0.5
+                  Constrained by: 
+                      Constrains: irrad_frac_lost_bol@secondary@component
+                      Related to: irrad_frac_lost_bol@secondary@component
+
+Parameter: irrad_frac_lost_bol@secondary@component
+                       Qualifier: irrad_frac_lost_bol
+                     Description: ratio of incident bolometric light that is lost/ignored
+                           Value: 0.5
+                  Constrained by: irrad_frac_refl_bol@secondary@component
+                      Constrains: None
+                      Related to: irrad_frac_refl_bol@secondary@component
+
+Parameter: ld_mode_bol@secondary@component
+                       Qualifier: ld_mode_bol
+                     Description: Mode to use for bolometric limb-darkening (used only for irradiation).
+                           Value: lookup
+                         Choices: lookup, manual
+                  Constrained by: 
+                      Constrains: None
+                      Related to: None
+
+Parameter: ld_func_bol@secondary@component
+                       Qualifier: ld_func_bol
+                     Description: Bolometric limb darkening model (used only for irradiation).
+                           Value: logarithmic
+                         Choices: linear, logarithmic, quadratic, square_root, power
+                  Constrained by: 
+                      Constrains: None
+                      Related to: None
+
+Parameter: ld_coeffs_source_bol@secondary@component
+                       Qualifier: ld_coeffs_source_bol
+                     Description: Source for bolometric limb darkening coefficients (used only for irradiation; 'auto' to interpolate from the applicable table according to the 'atm' parameter, or the name of a specific atmosphere table)
+                           Value: auto
+                         Choices: auto, phoenix, ck2004
+                  Constrained by: 
+                      Constrains: None
+                      Related to: None
+                 Only visible if: ld_mode_bol:lookup
+
+Parameter: ld_coeffs_bol@secondary@component
+                       Qualifier: ld_coeffs_bol
+                     Description: Bolometric limb darkening coefficients (used only for irradiation).
+                           Value: [0.71143302 0.28908705]
+                  Constrained by: 
+                      Constrains: None
+                      Related to: None
+                 Only visible if: ld_mode_bol:manual
+
+Parameter: mass@secondary@component
+                       Qualifier: mass
+                     Description: Mass
+                           Value: 0.1375 solMass
+                  Constrained by: sma@binary@component, period@binary@component, q@binary@component
+                      Constrains: logg@secondary@component
+                      Related to: requiv@secondary@component, logg@secondary@component, period@binary@component, q@binary@component, mass@primary@component, sma@binary@component
+
+Parameter: period@binary@component
+                       Qualifier: period
+                     Description: Orbital period (defined at t0@system, sidereal: wrt the sky)
+                           Value: 0.3439788 d
+                  Constrained by: 
+                      Constrains: t0_perpass@binary@component, t0_ref@binary@component, period_anom@binary@component, mean_anom@binary@component, freq@binary@component, period@primary@component, mass@secondary@component, period@secondary@component, compute_phases@lc01@dataset
+                      Related to: t0_supconj@binary@component, ecc@binary@component, per0@binary@component, dpdt@binary@component, dperdt@binary@component, t0@system, t0_perpass@binary@component, t0_ref@binary@component, period_anom@binary@component, mean_anom@binary@component, freq@binary@component, syncpar@primary@component, period@primary@component, sma@binary@component, q@binary@component, mass@secondary@component, syncpar@secondary@component, period@secondary@component, compute_times@lc01@dataset, phases_period@lc01@dataset, phases_dpdt@lc01@dataset, phases_t0@lc01@dataset, compute_phases@lc01@dataset, mass@primary@component
+
+Parameter: period_anom@binary@component
+                       Qualifier: period_anom
+                     Description: Anomalistic orbital period (defined at t0@system, anomalistic: time between two successive periastron passages)
+                           Value: 0.3439788 d
+                  Constrained by: period@binary@component, dperdt@binary@component
+                      Constrains: compute_phases@lc01@dataset
+                      Related to: compute_times@lc01@dataset, phases_period@lc01@dataset, period@binary@component, phases_dpdt@lc01@dataset, dpdt@binary@component, phases_t0@lc01@dataset, t0_supconj@binary@component, t0_perpass@binary@component, t0_ref@binary@component, compute_phases@lc01@dataset, dperdt@binary@component
+                 Only visible if: dperdt:!0.0
+
+Parameter: freq@binary@component
+                       Qualifier: freq
+                     Description: Orbital frequency (sidereal)
+                           Value: 18.26619838199331 rad / d
+                  Constrained by: period@binary@component
+                      Constrains: None
+                      Related to: period@binary@component
+
+Parameter: dpdt@binary@component
+                       Qualifier: dpdt
+                     Description: Time derivative of orbital period (anomalistic), where period is defined at t0@system
+                           Value: 0.0 s / yr
+                  Constrained by: 
+                      Constrains: t0_perpass@binary@component, t0_ref@binary@component, compute_phases@lc01@dataset
+                      Related to: t0_supconj@binary@component, period@binary@component, ecc@binary@component, per0@binary@component, dperdt@binary@component, t0@system, t0_perpass@binary@component, t0_ref@binary@component, compute_times@lc01@dataset, phases_period@lc01@dataset, period_anom@binary@component, phases_dpdt@lc01@dataset, phases_t0@lc01@dataset, compute_phases@lc01@dataset
+
+Parameter: per0@binary@component
+                       Qualifier: per0
+                     Description: Argument of periastron (defined at time t0@system)
+                           Value: 0.0 deg
+                  Constrained by: 
+                      Constrains: t0_perpass@binary@component, t0_ref@binary@component, ecosw@binary@component, esinw@binary@component
+                      Related to: t0_supconj@binary@component, period@binary@component, ecc@binary@component, dpdt@binary@component, dperdt@binary@component, t0@system, t0_perpass@binary@component, t0_ref@binary@component, ecosw@binary@component, esinw@binary@component
+
+Parameter: dperdt@binary@component
+                       Qualifier: dperdt
+                     Description: Time derivative of argument of periastron, where per0 is defined at t0@system
+                           Value: 0.0 deg / yr
+                  Constrained by: 
+                      Constrains: t0_perpass@binary@component, t0_ref@binary@component, period_anom@binary@component
+                      Related to: t0_supconj@binary@component, period@binary@component, ecc@binary@component, per0@binary@component, dpdt@binary@component, t0@system, t0_perpass@binary@component, t0_ref@binary@component, period_anom@binary@component
+
+Parameter: ecc@binary@component
+                       Qualifier: ecc
+                     Description: Eccentricity
+                           Value: 0.0
+                  Constrained by: 
+                      Constrains: t0_perpass@binary@component, t0_ref@binary@component, ecosw@binary@component, esinw@binary@component
+                      Related to: t0_supconj@binary@component, period@binary@component, per0@binary@component, dpdt@binary@component, dperdt@binary@component, t0@system, t0_perpass@binary@component, t0_ref@binary@component, ecosw@binary@component, esinw@binary@component
+
+Parameter: t0_perpass@binary@component
+                       Qualifier: t0_perpass
+                     Description: Zeropoint date at periastron passage of the primary component
+                           Value: 0.05400530000000002 d
+                  Constrained by: t0_supconj@binary@component, period@binary@component, ecc@binary@component, per0@binary@component, dpdt@binary@component, dperdt@binary@component, t0@system
+                      Constrains: mean_anom@binary@component, compute_phases@lc01@dataset
+                      Related to: t0@system, period@binary@component, mean_anom@binary@component, compute_times@lc01@dataset, phases_period@lc01@dataset, period_anom@binary@component, phases_dpdt@lc01@dataset, dpdt@binary@component, phases_t0@lc01@dataset, t0_supconj@binary@component, t0_ref@binary@component, compute_phases@lc01@dataset, ecc@binary@component, per0@binary@component, dperdt@binary@component
+
+Parameter: t0_supconj@binary@component
+                       Qualifier: t0_supconj
+                     Description: Zeropoint date at superior conjunction of the primary component
+                           Value: 0.14 d
+                  Constrained by: 
+                      Constrains: t0_perpass@binary@component, t0_ref@binary@component, compute_phases@lc01@dataset
+                      Related to: period@binary@component, ecc@binary@component, per0@binary@component, dpdt@binary@component, dperdt@binary@component, t0@system, t0_perpass@binary@component, t0_ref@binary@component, compute_times@lc01@dataset, phases_period@lc01@dataset, period_anom@binary@component, phases_dpdt@lc01@dataset, phases_t0@lc01@dataset, compute_phases@lc01@dataset
+
+Parameter: t0_ref@binary@component
+                       Qualifier: t0_ref
+                     Description: Zeropoint date at reference point for the primary component
+                           Value: 0.14 d
+                  Constrained by: t0_supconj@binary@component, period@binary@component, ecc@binary@component, per0@binary@component, dpdt@binary@component, dperdt@binary@component, t0@system
+                      Constrains: compute_phases@lc01@dataset
+                      Related to: compute_times@lc01@dataset, phases_period@lc01@dataset, period@binary@component, period_anom@binary@component, phases_dpdt@lc01@dataset, dpdt@binary@component, phases_t0@lc01@dataset, t0_supconj@binary@component, t0_perpass@binary@component, compute_phases@lc01@dataset, ecc@binary@component, per0@binary@component, dperdt@binary@component, t0@system
+
+Parameter: mean_anom@binary@component
+                       Qualifier: mean_anom
+                     Description: Mean anomaly at t0@system
+                           Value: 303.47934509480916 deg
+                  Constrained by: t0@system, t0_perpass@binary@component, period@binary@component
+                      Constrains: None
+                      Related to: t0@system, t0_perpass@binary@component, period@binary@component
+
+Parameter: incl@binary@component
+                       Qualifier: incl
+                     Description: Orbital inclination angle
+                           Value: 89.6 deg
+                  Constrained by: 
+                      Constrains: asini@binary@component, asini@primary@component, incl@primary@component, asini@secondary@component, incl@secondary@component
+                      Related to: sma@binary@component, asini@binary@component, q@binary@component, asini@primary@component, pitch@primary@component, incl@primary@component, asini@secondary@component, pitch@secondary@component, incl@secondary@component
+
+Parameter: q@binary@component
+                       Qualifier: q
+                     Description: Mass ratio
+                           Value: 0.11
+                  Constrained by: 
+                      Constrains: pot@contact_envelope@component, requiv@secondary@component, fillout_factor@contact_envelope@component, pot_min@contact_envelope@component, pot_max@contact_envelope@component, sma@primary@component, asini@primary@component, requiv_max@primary@component, requiv_min@primary@component, mass@secondary@component, sma@secondary@component, asini@secondary@component, requiv_max@secondary@component, requiv_min@secondary@component
+                      Related to: requiv@primary@component, sma@binary@component, pot@contact_envelope@component, requiv@secondary@component, fillout_factor@contact_envelope@component, pot_min@contact_envelope@component, pot_max@contact_envelope@component, sma@primary@component, incl@binary@component, asini@primary@component, requiv_max@primary@component, requiv_min@primary@component, period@binary@component, mass@secondary@component, sma@secondary@component, asini@secondary@component, requiv_max@secondary@component, requiv_min@secondary@component, mass@primary@component
+
+Parameter: sma@binary@component
+                       Qualifier: sma
+                     Description: Semi-major axis of the orbit (defined at time t0@system)
+                           Value: 2.3042870083368356 solRad
+                  Constrained by: period@binary@component, q@binary@component, mass@primary@component
+                      Constrains: asini@binary@component, pot@contact_envelope@component, requiv@secondary@component, requivratio@binary@component, requivsumfrac@binary@component, sma@primary@component, asini@primary@component, requiv_max@primary@component, requiv_min@primary@component, mass@secondary@component, sma@secondary@component, asini@secondary@component, requiv_max@secondary@component, requiv_min@secondary@component
+                      Related to: incl@binary@component, asini@binary@component, requiv@primary@component, q@binary@component, pot@contact_envelope@component, requiv@secondary@component, requivratio@binary@component, requivsumfrac@binary@component, sma@primary@component, asini@primary@component, requiv_max@primary@component, requiv_min@primary@component, period@binary@component, mass@secondary@component, sma@secondary@component, asini@secondary@component, requiv_max@secondary@component, requiv_min@secondary@component, mass@primary@component
+
+Parameter: long_an@binary@component
+                       Qualifier: long_an
+                     Description: Longitude of the ascending node
+                           Value: 0.0 deg
+                  Constrained by: 
+                      Constrains: long_an@primary@component, long_an@secondary@component
+                      Related to: yaw@primary@component, long_an@primary@component, yaw@secondary@component, long_an@secondary@component
+
+Parameter: asini@binary@component
+                       Qualifier: asini
+                     Description: Projected semi major axis
+                           Value: 2.3042308544878742 solRad
+                  Constrained by: sma@binary@component, incl@binary@component
+                      Constrains: None
+                      Related to: sma@binary@component, incl@binary@component
+
+Parameter: ecosw@binary@component
+                       Qualifier: ecosw
+                     Description: Eccentricity times cos of argument of periastron
+                           Value: 0.0
+                  Constrained by: ecc@binary@component, per0@binary@component
+                      Constrains: esinw@binary@component
+                      Related to: ecc@binary@component, per0@binary@component, esinw@binary@component
+
+Parameter: esinw@binary@component
+                       Qualifier: esinw
+                     Description: Eccentricity times sin of argument of periastron
+                           Value: 0.0
+                  Constrained by: ecc@binary@component, per0@binary@component
+                      Constrains: ecosw@binary@component
+                      Related to: ecc@binary@component, per0@binary@component, ecosw@binary@component
+
+Parameter: abun@contact_envelope@component
+                       Qualifier: abun
+                     Description: Abundance/Metallicity
+                           Value: 0.0
+                  Constrained by: 
+                      Constrains: None
+                      Related to: None
+
+Parameter: fillout_factor@contact_envelope@component
+                       Qualifier: fillout_factor
+                     Description: Fillout-factor of the envelope
+                           Value: 0.7062202284937172
+                  Constrained by: q@binary@component, pot@contact_envelope@component
+                      Constrains: None
+                      Related to: q@binary@component, pot@contact_envelope@component
+
+Parameter: pot@contact_envelope@component
+                       Qualifier: pot
+                     Description: Potential of the envelope (from the primary component's reference)
+                           Value: 1.938824043735639
+                  Constrained by: requiv@primary@component, q@binary@component, sma@binary@component
+                      Constrains: requiv@secondary@component, fillout_factor@contact_envelope@component
+                      Related to: q@binary@component, sma@binary@component, requiv@secondary@component, fillout_factor@contact_envelope@component, requiv@primary@component
+
+Parameter: pot_min@contact_envelope@component
+                       Qualifier: pot_min
+                     Description: Critical (minimum) value of the potential to remain a contact
+                           Value: 1.917769875703791
+                  Constrained by: q@binary@component
+                      Constrains: None
+                      Related to: q@binary@component
+
+Parameter: pot_max@contact_envelope@component
+                       Qualifier: pot_max
+                     Description: Critical (maximum) value of the potential to remain a contact
+                           Value: 1.9894363758303923
+                  Constrained by: q@binary@component
+                      Constrains: None
+                      Related to: q@binary@component
+
+Parameter: teffratio@binary@component
+                       Qualifier: teffratio
+                     Description: ratio between effective temperatures of children stars
+                           Value: 0.9752699407871821
+                  Constrained by: teff@secondary@component, teff@primary@component
+                      Constrains: None
+                      Related to: teff@secondary@component, teff@primary@component
+
+Parameter: requivratio@binary@component
+                       Qualifier: requivratio
+                     Description: ratio between equivalent radii of children stars
+                           Value: 0.400684484810066
+                  Constrained by: requiv@secondary@component, requiv@primary@component
+                      Constrains: requivsumfrac@binary@component
+                      Related to: requiv@primary@component, requiv@secondary@component, sma@binary@component, requivsumfrac@binary@component
+
+Parameter: requivsumfrac@binary@component
+                       Qualifier: requivsumfrac
+                     Description: sum of fractional equivalent radii of children stars
+                           Value: 0.8327685471675776
+                  Constrained by: requiv@primary@component, requiv@secondary@component, sma@binary@component
+                      Constrains: requivratio@binary@component
+                      Related to: requiv@secondary@component, requiv@primary@component, requivratio@binary@component, sma@binary@component
+
+Parameter: sma@primary@component
+                       Qualifier: sma
+                     Description: Semi major axis of the component in the orbit
+                           Value: 0.22835276659193865 solRad
+                  Constrained by: sma@binary@component, q@binary@component
+                      Constrains: None
+                      Related to: sma@binary@component, q@binary@component
+
+Parameter: asini@primary@component
+                       Qualifier: asini
+                     Description: Projected semi major axis of the component in the orbit
+                           Value: 0.22834720179609563 solRad
+                  Constrained by: sma@binary@component, incl@binary@component, q@binary@component
+                      Constrains: None
+                      Related to: sma@binary@component, incl@binary@component, q@binary@component
+
+Parameter: sma@secondary@component
+                       Qualifier: sma
+                     Description: Semi major axis of the component in the orbit
+                           Value: 2.0759342417448967 solRad
+                  Constrained by: sma@binary@component, q@binary@component
+                      Constrains: None
+                      Related to: sma@binary@component, q@binary@component
+
+Parameter: asini@secondary@component
+                       Qualifier: asini
+                     Description: Projected semi major axis of the component in the orbit
+                           Value: 2.0758836526917785 solRad
+                  Constrained by: sma@binary@component, incl@binary@component, q@binary@component
+                      Constrains: None
+                      Related to: sma@binary@component, incl@binary@component, q@binary@component
+
+Constrains (qualifier): ebv
+Expression in solar units (value): {Av@system} / {Rv@system}
+Current Result (result): 0.057741935483870965
+Constrains (qualifier): freq
+Expression in solar units (value): 6.283185 / {period@primary@component}
+Current Result (result): 18.26619838199331 rad / d
+Constrains (qualifier): logg
+Expression in solar units (value): log10((({mass@primary@component} / ({requiv@primary@component} ** 2.000000)) * 2942.206218) * 9.319541)
+Current Result (result): 4.261536510961695
+Constrains (qualifier): irrad_frac_lost_bol
+Expression in solar units (value): 1.000000 - {irrad_frac_refl_bol@primary@component}
+Current Result (result): 0.5
+Constrains (qualifier): freq
+Expression in solar units (value): 6.283185 / {period@secondary@component}
+Current Result (result): 18.26619838199331 rad / d
+Constrains (qualifier): logg
+Expression in solar units (value): log10((({mass@secondary@component} / ({requiv@secondary@component} ** 2.000000)) * 2942.206218) * 9.319541)
+Current Result (result): 4.0973241438566115
+Constrains (qualifier): irrad_frac_lost_bol
+Expression in solar units (value): 1.000000 - {irrad_frac_refl_bol@secondary@component}
+Current Result (result): 0.5
+Constrains (qualifier): asini
+Expression in solar units (value): {sma@binary@component} * (sin({incl@binary@component}))
+Current Result (result): 2.3042308544878742 solRad
+Constrains (qualifier): t0_perpass
+Expression in solar units (value): t0_supconj_to_perpass({t0_supconj@binary@component}, {period@binary@component}, {ecc@binary@component}, {per0@binary@component}, {dpdt@binary@component}, {dperdt@binary@component}, {t0@system})
+Current Result (result): 0.05400530000000002 d
+Constrains (qualifier): t0_ref
+Expression in solar units (value): t0_supconj_to_ref({t0_supconj@binary@component}, {period@binary@component}, {ecc@binary@component}, {per0@binary@component}, {dpdt@binary@component}, {dperdt@binary@component}, {t0@system})
+Current Result (result): 0.14 d
+Constrains (qualifier): period_anom
+Expression in solar units (value): {period@binary@component} / ((((-1.000000 * {period@binary@component}) * {dperdt@binary@component}) / 6.283185307179586231995926937088) + 1.000000000000000000000000000000)
+Current Result (result): 0.3439788 d
+Constrains (qualifier): mean_anom
+Expression in solar units (value): (6.283185 * ({t0@system} - {t0_perpass@binary@component})) / {period@binary@component}
+Current Result (result): -56.52065490519084 deg
+Constrains (qualifier): ecosw
+Expression in solar units (value): {ecc@binary@component} * (cos({per0@binary@component}))
+Current Result (result): 0.0
+Constrains (qualifier): esinw
+Expression in solar units (value): {ecc@binary@component} * (sin({per0@binary@component}))
+Current Result (result): 0.0
+Constrains (qualifier): freq
+Expression in solar units (value): 6.283185 / {period@binary@component}
+Current Result (result): 18.26619838199331 rad / d
+Constrains (qualifier): pot
+Expression in solar units (value): requiv_to_pot_contact({requiv@primary@component}, {q@binary@component}, {sma@binary@component}, 1)
+Current Result (result): 1.938824043735639
+Constrains (qualifier): requiv
+Expression in solar units (value): pot_to_requiv_contact({pot@contact_envelope@component}, {q@binary@component}, {sma@binary@component}, 2)
+Current Result (result): 0.5489377441897905 solRad
+Constrains (qualifier): fillout_factor
+Expression in solar units (value): pot_to_fillout_factor({q@binary@component}, {pot@contact_envelope@component})
+Current Result (result): 0.7062202284937172
+Constrains (qualifier): pot_min
+Expression in solar units (value): potential_contact_L23({q@binary@component})
+Current Result (result): 1.917769875703791
+Constrains (qualifier): pot_max
+Expression in solar units (value): potential_contact_L1({q@binary@component})
+Current Result (result): 1.9894363758303923
+Constrains (qualifier): teffratio
+Expression in solar units (value): {teff@secondary@component} / {teff@primary@component}
+Current Result (result): 0.9752699407871821
+Constrains (qualifier): requivratio
+Expression in solar units (value): {requiv@secondary@component} / {requiv@primary@component}
+Current Result (result): 0.400684484810066
+Constrains (qualifier): requivsumfrac
+Expression in solar units (value): ({requiv@primary@component} + {requiv@secondary@component}) / {sma@binary@component}
+Current Result (result): 0.8327685471675776
+Constrains (qualifier): sma
+Expression in solar units (value): (((({mass@primary@component} * ({period@binary@component} ** 2.000000)) * ({q@binary@component} + 1.000000)) * 2942.206217504419328179210424423218) / 39.478418) ** (1./3)
+Current Result (result): 2.3042870083368356 solRad
+Constrains (qualifier): sma
+Expression in solar units (value): {sma@binary@component} / ((1.000000 / {q@binary@component}) + 1.000000)
+Current Result (result): 0.22835276659193865 solRad
+Constrains (qualifier): asini
+Expression in solar units (value): ({sma@binary@component} * (sin({incl@binary@component}))) / ((1.000000 / {q@binary@component}) + 1.000000)
+Current Result (result): 0.22834720179609563 solRad
+Constrains (qualifier): period
+Expression in solar units (value): {period@binary@component} / {syncpar@primary@component}
+Current Result (result): 0.3439788 d
+Constrains (qualifier): incl
+Expression in solar units (value): {incl@binary@component} + {pitch@primary@component}
+Current Result (result): 89.6 deg
+Constrains (qualifier): long_an
+Expression in solar units (value): {long_an@binary@component} + {yaw@primary@component}
+Current Result (result): 0.0 deg
+Constrains (qualifier): requiv_max
+Expression in solar units (value): requiv_contact_L23({q@binary@component}, {sma@binary@component}, 1)
+Current Result (result): 1.3922159789270905 solRad
+Constrains (qualifier): requiv_min
+Expression in solar units (value): requiv_contact_L1({q@binary@component}, {sma@binary@component}, 1)
+Current Result (result): 1.3199515362463703 solRad
+Constrains (qualifier): mass
+Expression in solar units (value): (39.478418 * ({sma@binary@component} ** 3.000000)) / ((({period@binary@component} ** 2.000000) * ((1.000000 / {q@binary@component}) + 1.000000)) * 2942.206217504419328179210424423218)
+Current Result (result): 0.1375 solMass
+Constrains (qualifier): sma
+Expression in solar units (value): {sma@binary@component} / ({q@binary@component} + 1.000000)
+Current Result (result): 2.0759342417448967 solRad
+Constrains (qualifier): asini
+Expression in solar units (value): ({sma@binary@component} * (sin({incl@binary@component}))) / ({q@binary@component} + 1.000000)
+Current Result (result): 2.0758836526917785 solRad
+Constrains (qualifier): period
+Expression in solar units (value): {period@binary@component} / {syncpar@secondary@component}
+Current Result (result): 0.3439788 d
+Constrains (qualifier): incl
+Expression in solar units (value): {incl@binary@component} + {pitch@secondary@component}
+Current Result (result): 89.6 deg
+Constrains (qualifier): long_an
+Expression in solar units (value): {long_an@binary@component} + {yaw@secondary@component}
+Current Result (result): 0.0 deg
+Constrains (qualifier): requiv_max
+Expression in solar units (value): requiv_contact_L23({q@binary@component}, {sma@binary@component}, 2)
+Current Result (result): 0.5791393958335169 solRad
+Constrains (qualifier): requiv_min
+Expression in solar units (value): requiv_contact_L1({q@binary@component}, {sma@binary@component}, 2)
+Current Result (result): 0.4866922449685057 solRad
+Parameter: sample_from@phoebe01@compute
+                       Qualifier: sample_from
+                     Description: distributions or solutions to use for sampling.  If pointing to a solution, adopt_solution(as_distributions=True, **kwargs) will be called to create a temporary distribution which will be removed automatically.  If all distributions are delta functions (face-values), sample_mode and sample_num will be ignored with a warning.
+                           Value: []
+                         Choices: 
+                  Constrained by: 
+                      Constrains: None
+                      Related to: None
+
+Parameter: sample_from_combine@phoebe01@compute
+                       Qualifier: sample_from_combine
+                     Description: Method to use to combine multiple distributions from sample_from for the same parameter.  first: ignore duplicate entries and take the first in the sample_from parameter
+                           Value: first
+                         Choices: first
+                  Constrained by: 
+                      Constrains: None
+                      Related to: None
+                 Only visible if: sample_from:<notempty>
+
+Parameter: sample_num@phoebe01@compute
+                       Qualifier: sample_num
+                     Description: Number of forward models to run sampling from the distributions defined in sample_from and sample_from_combine.
+                           Value: 10
+                  Constrained by: 
+                      Constrains: None
+                      Related to: None
+                 Only visible if: sample_from:<notempty>
+
+Parameter: sample_mode@phoebe01@compute
+                       Qualifier: sample_mode
+                     Description: Mode to use when exposing model after sampling.  all: expose all sampled forward-models.  median: only return the median of all sampled models.  1/3/5-sigma: expose the synthetic variable at the median and +/- n-sigma.
+                           Value: 1-sigma
+                         Choices: all, median, 1-sigma, 3-sigma, 5-sigma
+                  Constrained by: 
+                      Constrains: None
+                      Related to: None
+                 Only visible if: sample_from:<notempty>
+
+Parameter: expose_samples@phoebe01@compute
+                       Qualifier: expose_samples
+                     Description: Whether to expose failed samples along with the simplified error messages.
+                           Value: True
+                  Constrained by: 
+                      Constrains: None
+                      Related to: None
+                 Only visible if: sample_from:<notempty>
+
+Parameter: expose_failed@phoebe01@compute
+                       Qualifier: expose_failed
+                     Description: Whether to expose failed samples along with the simplified error messages.
+                           Value: True
+                  Constrained by: 
+                      Constrains: None
+                      Related to: None
+                 Only visible if: sample_from:<notempty>
+
+Parameter: comments@phoebe01@compute
+                       Qualifier: comments
+                     Description: User-provided comments for these compute-options.  Feel free to place any notes here - if not overridden, they will be copied to any resulting models.
+                           Value: 
+                  Constrained by: 
+                      Constrains: None
+                      Related to: None
+
+Parameter: use_server@phoebe01@compute
+                       Qualifier: use_server
+                     Description: Server to use when running the forward model (or "none" to run locally) via run_compute.
+                           Value: none
+                         Choices: none
+                  Constrained by: 
+                      Constrains: None
+                      Related to: None
+
+Parameter: enabled@phoebe01@compute
+                       Qualifier: enabled
+                     Description: Whether to create synthetics in compute/solver run
+                           Value: True
+                  Constrained by: 
+                      Constrains: None
+                      Related to: None
+
+Parameter: enabled@_default@phoebe01@phoebe@compute
+                       Qualifier: enabled
+                     Description: Whether to enable the feature in compute/solver run
+                           Value: True
+                  Constrained by: 
+                      Constrains: None
+                      Related to: None
+
+Parameter: gp_exclude_phases_enabled@phoebe01@compute
+                       Qualifier: gp_exclude_phases_enabled
+                     Description: Whether to apply the mask in gp_exclude_phases during gaussian process fitting.
+                           Value: True
+                  Constrained by: 
+                      Constrains: None
+                      Related to: None
+                 Only visible if: ds_has_enabled_feature:gp_*
+
+Parameter: gp_exclude_phases@phoebe01@compute
+                       Qualifier: gp_exclude_phases
+                     Description: List of phase-tuples.  Any observations inside the range set by any of the tuples will be ignored by the gaussian process features.
+                           Value: []
+                  Constrained by: 
+                      Constrains: None
+                      Related to: None
+                 Only visible if: ds_has_enabled_feature:gp_*,gp_exclude_phases_enabled:True
+
+Parameter: dynamics_method@phoebe01@compute
+                       Qualifier: dynamics_method
+                     Description: Which method to use to determine the dynamics of components
+                           Value: keplerian
+                         Choices: keplerian
+                  Constrained by: 
+                      Constrains: None
+                      Related to: None
+
+Parameter: ltte@phoebe01@compute
+                       Qualifier: ltte
+                     Description: Correct for light travel time effects
+                           Value: False
+                  Constrained by: 
+                      Constrains: None
+                      Related to: None
+
+Parameter: irrad_method@phoebe01@compute
+                       Qualifier: irrad_method
+                     Description: Which method to use to handle all irradiation effects (reflection)
+                           Value: horvat
+                         Choices: none, wilson, horvat
+                  Constrained by: 
+                      Constrains: None
+                      Related to: None
+
+Parameter: boosting_method@phoebe01@compute
+                       Qualifier: boosting_method
+                     Description: Type of boosting method
+                           Value: none
+                         Choices: none
+                  Constrained by: 
+                      Constrains: None
+                      Related to: None
+
+Parameter: mesh_method@_default@phoebe01@compute
+                       Qualifier: mesh_method
+                     Description: Which method to use for discretizing the surface
+                           Value: marching
+                         Choices: marching
+                  Constrained by: 
+                      Constrains: None
+                      Related to: None
+                 Only visible if: hierarchy.is_meshable:true
+
+Parameter: ntriangles@_default@phoebe01@compute
+                       Qualifier: ntriangles
+                     Description: Requested number of triangles (won't be exact).
+                           Value: 1500
+                  Constrained by: 
+                      Constrains: None
+                      Related to: None
+                 Only visible if: mesh_method:marching,hierarchy.is_meshable:true
+
+Parameter: distortion_method@_default@phoebe01@compute
+                       Qualifier: distortion_method
+                     Description: Method to use for distorting stars
+                           Value: roche
+                         Choices: roche, rotstar, sphere, none
+                  Constrained by: 
+                      Constrains: None
+                      Related to: None
+                 Only visible if: mesh_method:marching,hierarchy.is_meshable:true
+
+Parameter: eclipse_method@phoebe01@compute
+                       Qualifier: eclipse_method
+                     Description: Type of eclipse algorithm
+                           Value: native
+                         Choices: native, only_horizon
+                  Constrained by: 
+                      Constrains: None
+                      Related to: None
+
+Parameter: horizon_method@phoebe01@compute
+                       Qualifier: horizon_method
+                     Description: Type of horizon method
+                           Value: boolean
+                         Choices: boolean
+                  Constrained by: 
+                      Constrains: None
+                      Related to: None
+                 Only visible if: eclipse_method:native
+
+Parameter: atm@_default@phoebe01@compute
+                       Qualifier: atm
+                     Description: Atmosphere table
+                           Value: ck2004
+                         Choices: blackbody, ck2004, extern_atmx, phoenix, extern_planckint
+                  Constrained by: 
+                      Constrains: None
+                      Related to: None
+
+Parameter: fti_method@phoebe01@compute
+                       Qualifier: fti_method
+                     Description: How to handle finite-time integration (when non-zero exptime)
+                           Value: none
+                         Choices: none, oversample
+                  Constrained by: 
+                      Constrains: None
+                      Related to: None
+
+Parameter: fti_oversample@phoebe01@compute
+                       Qualifier: fti_oversample
+                     Description: Number of times to sample per-datapoint for finite-time integration
+                           Value: 5
+                  Constrained by: 
+                      Constrains: None
+                      Related to: None
+                 Only visible if: fti_method:oversample
+
+Parameter: rv_method@_default@phoebe01@compute
+                       Qualifier: rv_method
+                     Description: Method to use for computing RVs (must be flux-weighted for Rossiter-McLaughlin effects)
+                           Value: flux-weighted
+                         Choices: flux-weighted, dynamical
+                  Constrained by: 
+                      Constrains: None
+                      Related to: None
+
+Parameter: rv_grav@_default@phoebe01@compute
+                       Qualifier: rv_grav
+                     Description: Whether gravitational redshift effects are enabled for RVs
+                           Value: False
+                  Constrained by: 
+                      Constrains: None
+                      Related to: None
+                 Only visible if: rv_method:flux-weighted
+
+Parameter: mesh_method@primary@phoebe01@compute
+                       Qualifier: mesh_method
+                     Description: Which method to use for discretizing the surface
+                           Value: marching
+                         Choices: marching
+                  Constrained by: 
+                      Constrains: None
+                      Related to: None
+                 Only visible if: hierarchy.is_meshable:true
+
+Parameter: mesh_method@secondary@phoebe01@compute
+                       Qualifier: mesh_method
+                     Description: Which method to use for discretizing the surface
+                           Value: marching
+                         Choices: marching
+                  Constrained by: 
+                      Constrains: None
+                      Related to: None
+                 Only visible if: hierarchy.is_meshable:true
+
+Parameter: mesh_method@contact_envelope@phoebe01@compute
+                       Qualifier: mesh_method
+                     Description: Which method to use for discretizing the surface
+                           Value: marching
+                         Choices: marching
+                  Constrained by: 
+                      Constrains: None
+                      Related to: None
+                 Only visible if: hierarchy.is_meshable:true
+
+Parameter: ntriangles@primary@phoebe01@compute
+                       Qualifier: ntriangles
+                     Description: Requested number of triangles (won't be exact).
+                           Value: 1500
+                  Constrained by: 
+                      Constrains: None
+                      Related to: None
+                 Only visible if: mesh_method:marching,hierarchy.is_meshable:true
+
+Parameter: ntriangles@secondary@phoebe01@compute
+                       Qualifier: ntriangles
+                     Description: Requested number of triangles (won't be exact).
+                           Value: 1500
+                  Constrained by: 
+                      Constrains: None
+                      Related to: None
+                 Only visible if: mesh_method:marching,hierarchy.is_meshable:true
+
+Parameter: ntriangles@contact_envelope@phoebe01@compute
+                       Qualifier: ntriangles
+                     Description: Requested number of triangles (won't be exact).
+                           Value: 3000
+                  Constrained by: 
+                      Constrains: None
+                      Related to: None
+                 Only visible if: mesh_method:marching,hierarchy.is_meshable:true
+
+Parameter: distortion_method@primary@phoebe01@compute
+                       Qualifier: distortion_method
+                     Description: Method to use for distorting stars
+                           Value: roche
+                         Choices: roche, rotstar, sphere, none
+                  Constrained by: 
+                      Constrains: None
+                      Related to: None
+                 Only visible if: mesh_method:marching,hierarchy.is_meshable:true
+
+Parameter: distortion_method@secondary@phoebe01@compute
+                       Qualifier: distortion_method
+                     Description: Method to use for distorting stars
+                           Value: roche
+                         Choices: roche, rotstar, sphere, none
+                  Constrained by: 
+                      Constrains: None
+                      Related to: None
+                 Only visible if: mesh_method:marching,hierarchy.is_meshable:true
+
+Parameter: atm@primary@phoebe01@compute
+                       Qualifier: atm
+                     Description: Atmosphere table
+                           Value: ck2004
+                         Choices: blackbody, ck2004, extern_atmx, phoenix, extern_planckint
+                  Constrained by: 
+                      Constrains: None
+                      Related to: None
+
+Parameter: atm@secondary@phoebe01@compute
+                       Qualifier: atm
+                     Description: Atmosphere table
+                           Value: ck2004
+                         Choices: blackbody, ck2004, extern_atmx, phoenix, extern_planckint
+                  Constrained by: 
+                      Constrains: None
+                      Related to: None
+
+Parameter: default_time_source@figure
+                       Qualifier: default_time_source
+                     Description: Source to use for highlight/uncover time for any figure in which time_source is set to default.
+                           Value: None
+                         Choices: None, manual, t0_perpass@binary, t0_supconj@binary, t0_ref@binary, t0@system
+                  Constrained by: 
+                      Constrains: None
+                      Related to: None
+
+Parameter: default_time@figure
+                       Qualifier: default_time
+                     Description: Times to use for highlighting/uncovering if default_time_source=manual.
+                           Value: 0.0 d
+                  Constrained by: 
+                      Constrains: None
+                      Related to: None
+                 Only visible if: default_time_source:manual
+
+Parameter: latex_repr@primary@figure
+                       Qualifier: latex_repr
+                     Description: Representation to use in place of the component label when rendering latex representations of parameters.  If blank, will use the labels directly.
+                           Value: 
+                  Constrained by: 
+                      Constrains: None
+                      Related to: None
+
+Parameter: color@primary@figure
+                       Qualifier: color
+                     Description: Color to use for figures in which color_source is set to component
+                           Value: blue
+                         Choices: black, blue, orange, green, red, purple, ping, pink, yellow
+                  Constrained by: 
+                      Constrains: None
+                      Related to: None
+
+Parameter: marker@primary@figure
+                       Qualifier: marker
+                     Description: Marker (datasets only, not models) to use for figures in which marker_source is set to component
+                           Value: .
+                         Choices: None, ., o, +, s, *, x, v, ^, <, >, p, h, o, D
+                  Constrained by: 
+                      Constrains: None
+                      Related to: None
+
+Parameter: linestyle@primary@figure
+                       Qualifier: linestyle
+                     Description: Linestyle to use for figures in which linestyle_source is set to component
+                           Value: solid
+                         Choices: None, solid, dashed, dotted, dashdot
+                  Constrained by: 
+                      Constrains: None
+                      Related to: None
+
+Parameter: latex_repr@secondary@figure
+                       Qualifier: latex_repr
+                     Description: Representation to use in place of the component label when rendering latex representations of parameters.  If blank, will use the labels directly.
+                           Value: 
+                  Constrained by: 
+                      Constrains: None
+                      Related to: None
+
+Parameter: color@secondary@figure
+                       Qualifier: color
+                     Description: Color to use for figures in which color_source is set to component
+                           Value: orange
+                         Choices: black, blue, orange, green, red, purple, ping, pink, yellow
+                  Constrained by: 
+                      Constrains: None
+                      Related to: None
+
+Parameter: marker@secondary@figure
+                       Qualifier: marker
+                     Description: Marker (datasets only, not models) to use for figures in which marker_source is set to component
+                           Value: o
+                         Choices: None, ., o, +, s, *, x, v, ^, <, >, p, h, o, D
+                  Constrained by: 
+                      Constrains: None
+                      Related to: None
+
+Parameter: linestyle@secondary@figure
+                       Qualifier: linestyle
+                     Description: Linestyle to use for figures in which linestyle_source is set to component
+                           Value: dashed
+                         Choices: None, solid, dashed, dotted, dashdot
+                  Constrained by: 
+                      Constrains: None
+                      Related to: None
+
+Parameter: latex_repr@binary@figure
+                       Qualifier: latex_repr
+                     Description: Representation to use in place of the component label when rendering latex representations of parameters.  If blank, will use the labels directly.
+                           Value: 
+                  Constrained by: 
+                      Constrains: None
+                      Related to: None
+
+Parameter: latex_repr@contact_envelope@figure
+                       Qualifier: latex_repr
+                     Description: Representation to use in place of the component label when rendering latex representations of parameters.  If blank, will use the labels directly.
+                           Value: 
+                  Constrained by: 
+                      Constrains: None
+                      Related to: None
+
+Parameter: phoebe_version@setting
+                       Qualifier: phoebe_version
+                     Description: Version of PHOEBE
+                           Value: 2.4.11
+                  Constrained by: 
+                      Constrains: None
+                      Related to: None
+
+Parameter: dict_filter@setting
+                       Qualifier: dict_filter
+                     Description: Filters to use when using dictionary access
+                           Value: {}
+                  Constrained by: 
+                      Constrains: None
+                      Related to: None
+
+Parameter: dict_set_all@setting
+                       Qualifier: dict_set_all
+                     Description: Whether to set all values for dictionary access that returns more than 1 result
+                           Value: False
+                  Constrained by: 
+                      Constrains: None
+                      Related to: None
+
+Parameter: run_checks_compute@setting
+                       Qualifier: run_checks_compute
+                     Description: Compute options to use when calling run_checks/run_checks_compute or within interactive checks.
+                           Value: ['*']
+                         Choices: phoebe01
+                  Constrained by: 
+                      Constrains: None
+                      Related to: None
+
+Parameter: run_checks_solver@setting
+                       Qualifier: run_checks_solver
+                     Description: Solver options to use when calling run_checks/run_checks_solver or within interactive checks.
+                           Value: ['*']
+                         Choices: 
+                  Constrained by: 
+                      Constrains: None
+                      Related to: None
+
+Parameter: run_checks_solution@setting
+                       Qualifier: run_checks_solution
+                     Description: Solutions to use when calling run_checks/run_checks_solution or within interactive checks.
+                           Value: ['*']
+                         Choices: 
+                  Constrained by: 
+                      Constrains: None
+                      Related to: None
+
+Parameter: run_checks_figure@setting
+                       Qualifier: run_checks_figure
+                     Description: Figures to use when calling run_checks/run_checks_figure or within interactive checks.
+                           Value: ['*']
+                         Choices: lcfig01
+                  Constrained by: 
+                      Constrains: None
+                      Related to: None
+
+Parameter: run_checks_server@setting
+                       Qualifier: run_checks_server
+                     Description: Servers to use when calling run_checks/run_checks_server or within interactive checks.
+                           Value: ['*']
+                         Choices: 
+                  Constrained by: 
+                      Constrains: None
+                      Related to: None
+
+Parameter: auto_add_figure@setting
+                       Qualifier: auto_add_figure
+                     Description: Whether to automatically add figure parameters when a dataset is added with a new dataset type, or a solution is added.
+                           Value: True
+                  Constrained by: 
+                      Constrains: None
+                      Related to: None
+
+Parameter: auto_remove_figure@setting
+                       Qualifier: auto_remove_figure
+                     Description: Whether to automatically remove figure parameters when the referenced dataset/solution are removed.
+                           Value: True
+                  Constrained by: 
+                      Constrains: None
+                      Related to: None
+
+Parameter: web_client@setting
+                       Qualifier: web_client
+                     Description: Whether to default to using the web-client over a locally installed desktop-client when opening the UI from the desktop client.
+                           Value: False
+                  Constrained by: 
+                      Constrains: None
+                      Related to: None
+
+Parameter: web_client_url@setting
+                       Qualifier: web_client_url
+                     Description: Default location of web-client.  Will only be used if web_client is True.
+                           Value: ui.phoebe-project.org
+                  Constrained by: 
+                      Constrains: None
+                      Related to: None
+
+Parameter: times@lc01@dataset
+                       Qualifier: times
+                     Description: Observed times
+                           Value: [2460257.         2466265.51401954 2472274.02803907 ...
+ 8450745.47747693 8456753.99149646 8462762.505516  ] d
+                  Constrained by: 
+                      Constrains: None
+                      Related to: None
+
+Parameter: fluxes@lc01@dataset
+                       Qualifier: fluxes
+                     Description: Observed flux
+                           Value: [] W / m2
+                  Constrained by: 
+                      Constrains: None
+                      Related to: None
+
+Parameter: ld_mode@_default@lc01@dataset
+                       Qualifier: ld_mode
+                     Description: Mode to use for limb-darkening
+                           Value: lookup
+                         Choices: interp, lookup, manual
+                  Constrained by: 
+                      Constrains: None
+                      Related to: None
+
+Parameter: ld_func@_default@lc01@dataset
+                       Qualifier: ld_func
+                     Description: Limb darkening model
+                           Value: logarithmic
+                         Choices: linear, logarithmic, quadratic, square_root, power
+                  Constrained by: 
+                      Constrains: None
+                      Related to: None
+                 Only visible if: ld_mode:lookup|manual
+
+Parameter: ld_coeffs_source@_default@lc01@dataset
+                       Qualifier: ld_coeffs_source
+                     Description: Source for limb darkening coefficients ('auto' to interpolate from the applicable table according to the 'atm' parameter, or the name of a specific atmosphere table)
+                           Value: auto
+                         Choices: auto, ck2004, phoenix
+                  Constrained by: 
+                      Constrains: None
+                      Related to: None
+                 Only visible if: ld_mode:lookup
+
+Parameter: ld_coeffs@_default@lc01@dataset
+                       Qualifier: ld_coeffs
+                     Description: Limb darkening coefficients
+                           Value: [0.5 0.5]
+                  Constrained by: 
+                      Constrains: None
+                      Related to: None
+                 Only visible if: ld_mode:manual
+
+Parameter: passband@lc01@dataset
+                       Qualifier: passband
+                     Description: Passband
+                           Value: SDSS:g
+                         Choices: Cousins:I, PanStarrs:r, PanStarrs:y, SDSS:r, Johnson:B, SDSS:u, SDSS:uprime, Johnson:I, SDSS:rprime, Hipparcos:Hp, LSST:i, SSDSS:zs, Johnson:U, PanStarrs:i, SDSS:iprime, SDSS:g, LSST:r, Stromgren:v, Kepler:mean, ZTF:g, Gaia:BP, BRITE:red, Johnson:J, SDSS:gprime, SSDSS:is, SSDSS:us, Johnson:R, SDSS:zprime, Gaia:RVS, SDSS:i, Johnson:H, SWASP:default, PanStarrs:z, Tycho:B, Gaia:RP, Stromgren:y, PanStarrs:w, TESS:T, LSST:y3, KELT:R, Johnson:V, Gaia:G, ZTF:i, LSST:z, PanStarrs:open, Johnson:K, LSST:g, ZTF:r, SSDSS:rs, LSST:u, Cousins:R, Bolometric:900-40000, SSDSS:gs, Stromgren:u, Stromgren:b, Tycho:V, SDSS:z, SWASP:pre2004, PanStarrs:g, BRITE:blue
+                  Constrained by: 
+                      Constrains: None
+                      Related to: None
+
+Parameter: intens_weighting@lc01@dataset
+                       Qualifier: intens_weighting
+                     Description: Whether passband intensities are weighted by energy or photons
+                           Value: energy
+                         Choices: energy, photon
+                  Constrained by: 
+                      Constrains: None
+                      Related to: None
+
+Parameter: compute_times@lc01@dataset
+                       Qualifier: compute_times
+                     Description: Times to use during run_compute.  If empty, will use times parameter
+                           Value: [] d
+                  Constrained by: 
+                      Constrains: compute_phases@lc01@dataset
+                      Related to: phases_period@lc01@dataset, period@binary@component, period_anom@binary@component, phases_dpdt@lc01@dataset, dpdt@binary@component, phases_t0@lc01@dataset, t0_supconj@binary@component, t0_perpass@binary@component, t0_ref@binary@component, compute_phases@lc01@dataset
+
+Parameter: compute_phases@lc01@dataset
+                       Qualifier: compute_phases
+                     Description: Phases associated with compute_times.
+                           Value: []
+                  Constrained by: compute_times@lc01@dataset, phases_period@lc01@dataset, period@binary@component, period_anom@binary@component, phases_dpdt@lc01@dataset, dpdt@binary@component, phases_t0@lc01@dataset, t0_supconj@binary@component, t0_perpass@binary@component, t0_ref@binary@component
+                      Constrains: None
+                      Related to: compute_times@lc01@dataset, phases_period@lc01@dataset, period@binary@component, period_anom@binary@component, phases_dpdt@lc01@dataset, dpdt@binary@component, phases_t0@lc01@dataset, t0_supconj@binary@component, t0_perpass@binary@component, t0_ref@binary@component
+
+Parameter: phases_period@lc01@dataset
+                       Qualifier: phases_period
+                     Description: period to use when converting between compute_times and compute_phases as well as when applying mask_phases
+                           Value: period
+                         Choices: period, period_anom
+                  Constrained by: 
+                      Constrains: compute_phases@lc01@dataset
+                      Related to: compute_times@lc01@dataset, period@binary@component, period_anom@binary@component, phases_dpdt@lc01@dataset, dpdt@binary@component, phases_t0@lc01@dataset, t0_supconj@binary@component, t0_perpass@binary@component, t0_ref@binary@component, compute_phases@lc01@dataset
+                 Only visible if: [dataset][context][kind]dperdt:!0.0,hierarchy.is_meshable:False
+
+Parameter: phases_dpdt@lc01@dataset
+                       Qualifier: phases_dpdt
+                     Description: dpdt to use when converting between compute_times and compute_phases as well as when applying mask_phases
+                           Value: dpdt
+                         Choices: dpdt, none
+                  Constrained by: 
+                      Constrains: compute_phases@lc01@dataset
+                      Related to: compute_times@lc01@dataset, phases_period@lc01@dataset, period@binary@component, period_anom@binary@component, dpdt@binary@component, phases_t0@lc01@dataset, t0_supconj@binary@component, t0_perpass@binary@component, t0_ref@binary@component, compute_phases@lc01@dataset
+                 Only visible if: [dataset][context][kind]dpdt:!0.0,hierarchy.is_meshable:False
+
+Parameter: phases_t0@lc01@dataset
+                       Qualifier: phases_t0
+                     Description: t0 to use when converting between compute_times and compute_phases as well as when applying mask_phases
+                           Value: t0_supconj
+                         Choices: t0_supconj, t0_perpass, t0_ref
+                  Constrained by: 
+                      Constrains: compute_phases@lc01@dataset
+                      Related to: compute_times@lc01@dataset, phases_period@lc01@dataset, period@binary@component, period_anom@binary@component, phases_dpdt@lc01@dataset, dpdt@binary@component, t0_supconj@binary@component, t0_perpass@binary@component, t0_ref@binary@component, compute_phases@lc01@dataset
+                 Only visible if: hierarchy.is_meshable:False
+
+Parameter: mask_enabled@lc01@dataset
+                       Qualifier: mask_enabled
+                     Description: Whether to apply the mask in mask_phases during plotting, calculate_residuals, calculate_chi2, calculate_lnlikelihood, and run_solver
+                           Value: True
+                  Constrained by: 
+                      Constrains: None
+                      Related to: None
+
+Parameter: mask_phases@lc01@dataset
+                       Qualifier: mask_phases
+                     Description: List of phase-tuples.  Any observations inside the range set by any of the tuples will be included.
+                           Value: []
+                  Constrained by: 
+                      Constrains: None
+                      Related to: None
+                 Only visible if: [component]mask_enabled:True
+
+Parameter: solver_times@lc01@dataset
+                       Qualifier: solver_times
+                     Description: times to use within run_solver.  All options will properly account for masking from mask_times.  To see how this is parsed, see b.parse_solver_times.  auto: use compute_times if provided and shorter than times, otherwise use times.  compute_times: use compute_times if provided.  times: use times array.
+                           Value: auto
+                         Choices: auto, compute_times, times
+                  Constrained by: 
+                      Constrains: None
+                      Related to: None
+
+Parameter: sigmas@lc01@dataset
+                       Qualifier: sigmas
+                     Description: Observed uncertainty on flux
+                           Value: [] W / m2
+                  Constrained by: 
+                      Constrains: None
+                      Related to: None
+
+Parameter: sigmas_lnf@lc01@dataset
+                       Qualifier: sigmas_lnf
+                     Description: Natural log of the fractional amount to sigmas are underestimate (when calculating chi2/lnlikelihood)
+                           Value: -inf
+                  Constrained by: 
+                      Constrains: None
+                      Related to: None
+                 Only visible if: sigmas:<notempty>
+
+Parameter: pblum_mode@lc01@dataset
+                       Qualifier: pblum_mode
+                     Description: Mode for scaling passband luminosities
+                           Value: component-coupled
+                         Choices: decoupled, component-coupled, dataset-coupled, dataset-scaled, absolute
+                  Constrained by: 
+                      Constrains: None
+                      Related to: None
+
+Parameter: pblum_component@lc01@dataset
+                       Qualifier: pblum_component
+                     Description: Which component's pblum will be provided
+                           Value: primary
+                         Choices: primary, secondary
+                  Constrained by: 
+                      Constrains: None
+                      Related to: None
+                 Only visible if: pblum_mode:component-coupled
+
+Parameter: pblum@_default@lc01@dataset
+                       Qualifier: pblum
+                     Description: Passband luminosity (defined at t0)
+                           Value: 12.566370614359172 W
+                  Constrained by: 
+                      Constrains: None
+                      Related to: None
+                 Only visible if: [component]pblum_mode:decoupled||[component]pblum_mode:component-coupled,[component]pblum_component:<component>
+
+Parameter: pblum_dataset@lc01@dataset
+                       Qualifier: pblum_dataset
+                     Description: Dataset with which to couple luminosities based on color
+                           Value: 
+                         Choices: 
+                  Constrained by: 
+                      Constrains: None
+                      Related to: None
+                 Only visible if: pblum_mode:dataset-coupled
+
+Parameter: pbflux@lc01@dataset
+                       Qualifier: pbflux
+                     Description: Total inrinsic (excluding features and irradiation) passband flux (at t0, including l3 if pblum_mode='flux')
+                           Value: 1.0 W / m2
+                  Constrained by: 
+                      Constrains: None
+                      Related to: None
+                 Only visible if: false
+
+Parameter: l3_mode@lc01@dataset
+                       Qualifier: l3_mode
+                     Description: Whether third light is given in units of flux or as a fraction of total light
+                           Value: flux
+                         Choices: flux, fraction
+                  Constrained by: 
+                      Constrains: None
+                      Related to: None
+
+Parameter: l3@lc01@dataset
+                       Qualifier: l3
+                     Description: Third light in flux units
+                           Value: 0.0 W / m2
+                  Constrained by: 
+                      Constrains: None
+                      Related to: None
+                 Only visible if: l3_mode:flux
+
+Parameter: l3_frac@lc01@dataset
+                       Qualifier: l3_frac
+                     Description: Third light as a fraction of total flux (both system and third light)
+                           Value: 0.0
+                  Constrained by: 
+                      Constrains: None
+                      Related to: None
+                 Only visible if: l3_mode:fraction
+
+Parameter: exptime@lc01@dataset
+                       Qualifier: exptime
+                     Description: Exposure time (time is defined as mid-exposure)
+                           Value: 0.0 s
+                  Constrained by: 
+                      Constrains: None
+                      Related to: None
+
+Parameter: enabled@phoebe01@compute
+                       Qualifier: enabled
+                     Description: Whether to create synthetics in compute/solver run
+                           Value: True
+                  Constrained by: 
+                      Constrains: None
+                      Related to: None
+
+Parameter: gp_exclude_phases_enabled@phoebe01@compute
+                       Qualifier: gp_exclude_phases_enabled
+                     Description: Whether to apply the mask in gp_exclude_phases during gaussian process fitting.
+                           Value: True
+                  Constrained by: 
+                      Constrains: None
+                      Related to: None
+                 Only visible if: ds_has_enabled_feature:gp_*
+
+Parameter: gp_exclude_phases@phoebe01@compute
+                       Qualifier: gp_exclude_phases
+                     Description: List of phase-tuples.  Any observations inside the range set by any of the tuples will be ignored by the gaussian process features.
+                           Value: []
+                  Constrained by: 
+                      Constrains: None
+                      Related to: None
+                 Only visible if: ds_has_enabled_feature:gp_*,gp_exclude_phases_enabled:True
+
+Parameter: fti_method@phoebe01@compute
+                       Qualifier: fti_method
+                     Description: How to handle finite-time integration (when non-zero exptime)
+                           Value: none
+                         Choices: none, oversample
+                  Constrained by: 
+                      Constrains: None
+                      Related to: None
+
+Parameter: fti_oversample@phoebe01@compute
+                       Qualifier: fti_oversample
+                     Description: Number of times to sample per-datapoint for finite-time integration
+                           Value: 5
+                  Constrained by: 
+                      Constrains: None
+                      Related to: None
+                 Only visible if: fti_method:oversample
+
+Parameter: ld_mode@primary@lc01@dataset
+                       Qualifier: ld_mode
+                     Description: Mode to use for limb-darkening
+                           Value: lookup
+                         Choices: interp, lookup, manual
+                  Constrained by: 
+                      Constrains: None
+                      Related to: None
+
+Parameter: ld_mode@secondary@lc01@dataset
+                       Qualifier: ld_mode
+                     Description: Mode to use for limb-darkening
+                           Value: lookup
+                         Choices: interp, lookup, manual
+                  Constrained by: 
+                      Constrains: None
+                      Related to: None
+
+Parameter: ld_func@primary@lc01@dataset
+                       Qualifier: ld_func
+                     Description: Limb darkening model
+                           Value: logarithmic
+                         Choices: linear, logarithmic, quadratic, square_root, power
+                  Constrained by: 
+                      Constrains: None
+                      Related to: None
+                 Only visible if: ld_mode:lookup|manual
+
+Parameter: ld_func@secondary@lc01@dataset
+                       Qualifier: ld_func
+                     Description: Limb darkening model
+                           Value: logarithmic
+                         Choices: linear, logarithmic, quadratic, square_root, power
+                  Constrained by: 
+                      Constrains: None
+                      Related to: None
+                 Only visible if: ld_mode:lookup|manual
+
+Parameter: ld_coeffs_source@primary@lc01@dataset
+                       Qualifier: ld_coeffs_source
+                     Description: Source for limb darkening coefficients ('auto' to interpolate from the applicable table according to the 'atm' parameter, or the name of a specific atmosphere table)
+                           Value: auto
+                         Choices: auto, ck2004, phoenix
+                  Constrained by: 
+                      Constrains: None
+                      Related to: None
+                 Only visible if: ld_mode:lookup
+
+Parameter: ld_coeffs_source@secondary@lc01@dataset
+                       Qualifier: ld_coeffs_source
+                     Description: Source for limb darkening coefficients ('auto' to interpolate from the applicable table according to the 'atm' parameter, or the name of a specific atmosphere table)
+                           Value: auto
+                         Choices: auto, ck2004, phoenix
+                  Constrained by: 
+                      Constrains: None
+                      Related to: None
+                 Only visible if: ld_mode:lookup
+
+Parameter: ld_coeffs@primary@lc01@dataset
+                       Qualifier: ld_coeffs
+                     Description: Limb darkening coefficients
+                           Value: [0.85249159 0.1771738 ]
+                  Constrained by: 
+                      Constrains: None
+                      Related to: None
+                 Only visible if: ld_mode:manual
+
+Parameter: ld_coeffs@secondary@lc01@dataset
+                       Qualifier: ld_coeffs
+                     Description: Limb darkening coefficients
+                           Value: [0.85894328 0.1598301 ]
+                  Constrained by: 
+                      Constrains: None
+                      Related to: None
+                 Only visible if: ld_mode:manual
+
+Parameter: pblum@primary@lc01@dataset
+                       Qualifier: pblum
+                     Description: Passband luminosity (defined at t0)
+                           Value: 12.566370614359172 W
+                  Constrained by: 
+                      Constrains: None
+                      Related to: None
+                 Only visible if: [component]pblum_mode:decoupled||[component]pblum_mode:component-coupled,[component]pblum_component:<component>
+
+Parameter: pblum@secondary@lc01@dataset
+                       Qualifier: pblum
+                     Description: Passband luminosity (defined at t0)
+                           Value: 12.566370614359172 W
+                  Constrained by: 
+                      Constrains: None
+                      Related to: None
+                 Only visible if: [component]pblum_mode:decoupled||[component]pblum_mode:component-coupled,[component]pblum_component:<component>
+
+Constrains (qualifier): compute_phases
+Expression in solar units (value): times_to_phases({compute_times@lc01@dataset}, {phases_period@lc01@dataset}, {period@binary@component}, {period_anom@binary@component}, {phases_dpdt@lc01@dataset}, {dpdt@binary@component}, {phases_t0@lc01@dataset}, {t0_supconj@binary@component}, {t0_perpass@binary@component}, {t0_ref@binary@component})
+Current Result (result): []
+Parameter: latex_repr@lc01@figure
+                       Qualifier: latex_repr
+                     Description: Representation to use in place of the dataset label when rendering latex representations of parameters.  If blank, will use the labels directly.
+                           Value: 
+                  Constrained by: 
+                      Constrains: None
+                      Related to: None
+
+Parameter: color@lc01@figure
+                       Qualifier: color
+                     Description: Color to use for figures in which color_source is set to dataset
+                           Value: black
+                         Choices: black, blue, orange, green, red, purple, ping, pink, yellow
+                  Constrained by: 
+                      Constrains: None
+                      Related to: None
+
+Parameter: marker@lc01@figure
+                       Qualifier: marker
+                     Description: Marker (datasets only, not models) to use for figures in which marker_source is set to dataset
+                           Value: .
+                         Choices: None, ., o, +, s, *, x, v, ^, <, >, p, h, o, D
+                  Constrained by: 
+                      Constrains: None
+                      Related to: None
+
+Parameter: linestyle@lc01@figure
+                       Qualifier: linestyle
+                     Description: Linestyle to use for figures in which linestyle_source is set to dataset
+                           Value: solid
+                         Choices: None, solid, dashed, dotted, dashdot
+                  Constrained by: 
+                      Constrains: None
+                      Related to: None
+
+Parameter: contexts@lcfig01@figure
+                       Qualifier: contexts
+                     Description: Contexts to include in the plot
+                           Value: ['*']
+                         Choices: dataset, model
+                  Constrained by: 
+                      Constrains: None
+                      Related to: None
+
+Parameter: datasets@lcfig01@figure
+                       Qualifier: datasets
+                     Description: Datasets to include in the plot
+                           Value: ['*']
+                         Choices: lc01
+                  Constrained by: 
+                      Constrains: None
+                      Related to: None
+
+Parameter: models@lcfig01@figure
+                       Qualifier: models
+                     Description: Models to include in the plot
+                           Value: ['*']
+                         Choices: default
+                  Constrained by: 
+                      Constrains: None
+                      Related to: None
+
+Parameter: x@lcfig01@figure
+                       Qualifier: x
+                     Description: Array to plot along x-axis
+                           Value: times
+                         Choices: times, phases
+                  Constrained by: 
+                      Constrains: None
+                      Related to: None
+
+Parameter: period@lcfig01@figure
+                       Qualifier: period
+                     Description: Period to use when phasing for x-axis
+                           Value: period
+                         Choices: period, period_anom
+                  Constrained by: 
+                      Constrains: None
+                      Related to: None
+                 Only visible if: [context][figure][kind]dperdt:!0.0,x:phases
+
+Parameter: dpdt@lcfig01@figure
+                       Qualifier: dpdt
+                     Description: dpdt to use when phasing for x-axis
+                           Value: dpdt
+                         Choices: dpdt, none
+                  Constrained by: 
+                      Constrains: None
+                      Related to: None
+                 Only visible if: [context][figure][kind]dpdt:!0.0,x:phases
+
+Parameter: t0@lcfig01@figure
+                       Qualifier: t0
+                     Description: t0 to use when phasing for x-axis
+                           Value: t0_supconj
+                         Choices: t0_supconj, t0_perpass, t0_ref
+                  Constrained by: 
+                      Constrains: None
+                      Related to: None
+                 Only visible if: x:phases
+
+Parameter: y@lcfig01@figure
+                       Qualifier: y
+                     Description: Array to plot along y-axis
+                           Value: fluxes
+                         Choices: fluxes, residuals
+                  Constrained by: 
+                      Constrains: None
+                      Related to: None
+
+Parameter: xlabel_source@lcfig01@figure
+                       Qualifier: xlabel_source
+                     Description: Whether to automatically or manually provide label for the x-axis
+                           Value: auto
+                         Choices: auto, manual
+                  Constrained by: 
+                      Constrains: None
+                      Related to: None
+
+Parameter: xlabel@lcfig01@figure
+                       Qualifier: xlabel
+                     Description: Custom label for the x-axis
+                           Value: xlabel
+                  Constrained by: 
+                      Constrains: None
+                      Related to: None
+                 Only visible if: xlabel_source:manual
+
+Parameter: xunit_source@lcfig01@figure
+                       Qualifier: xunit_source
+                     Description: Whether to automatically or manually set the x-units.
+                           Value: auto
+                         Choices: auto, manual
+                  Constrained by: 
+                      Constrains: None
+                      Related to: None
+
+Parameter: xlim_source@lcfig01@figure
+                       Qualifier: xlim_source
+                     Description: Whether to automatically or manually set the x-limits.
+                           Value: auto
+                         Choices: auto, manual
+                  Constrained by: 
+                      Constrains: None
+                      Related to: None
+
+Parameter: xunit@lcfig01@lc@figure
+                       Qualifier: xunit
+                     Description: Unit for x-axis
+                           Value: d
+                         Choices: yr, d, h, min, s
+                  Constrained by: 
+                      Constrains: None
+                      Related to: None
+                 Only visible if: xunit_source:manual,x:times
+
+Parameter: xlim@lcfig01@lc@figure
+                       Qualifier: xlim
+                     Description: Limit for the x-axis
+                           Value: [] d
+                  Constrained by: 
+                      Constrains: None
+                      Related to: None
+                 Only visible if: xlim_source:manual,x:times
+
+Parameter: xunit@lcfig01@lc@figure
+                       Qualifier: xunit
+                     Description: Unit for x-axis
+                           Value: 
+                         Choices: dimensionless
+                  Constrained by: 
+                      Constrains: None
+                      Related to: None
+                 Only visible if: xunit_source:manual,x:!times
+
+Parameter: xlim@lcfig01@lc@figure
+                       Qualifier: xlim
+                     Description: Limit for the x-axis
+                           Value: []
+                  Constrained by: 
+                      Constrains: None
+                      Related to: None
+                 Only visible if: xlim_source:manual,x:!times
+
+Parameter: ylabel_source@lcfig01@figure
+                       Qualifier: ylabel_source
+                     Description: Whether to automatically or manually provide label for the y-axis
+                           Value: auto
+                         Choices: auto, manual
+                  Constrained by: 
+                      Constrains: None
+                      Related to: None
+
+Parameter: ylabel@lcfig01@figure
+                       Qualifier: ylabel
+                     Description: Custom label for the y-axis
+                           Value: ylabel
+                  Constrained by: 
+                      Constrains: None
+                      Related to: None
+                 Only visible if: ylabel_source:manual
+
+Parameter: yunit_source@lcfig01@figure
+                       Qualifier: yunit_source
+                     Description: Whether to automatically or manually set the y-units.
+                           Value: auto
+                         Choices: auto, manual
+                  Constrained by: 
+                      Constrains: None
+                      Related to: None
+
+Parameter: ylim_source@lcfig01@figure
+                       Qualifier: ylim_source
+                     Description: Whether to automatically or manually set the y-limits.
+                           Value: auto
+                         Choices: auto, manual
+                  Constrained by: 
+                      Constrains: None
+                      Related to: None
+
+Parameter: yunit@lcfig01@figure
+                       Qualifier: yunit
+                     Description: Unit for y-axis
+                           Value: W / m2
+                         Choices: W / m2
+                  Constrained by: 
+                      Constrains: None
+                      Related to: None
+                 Only visible if: yunit_source:manual
+
+Parameter: ylim@lcfig01@figure
+                       Qualifier: ylim
+                     Description: Limit for the y-axis
+                           Value: [] W / m2
+                  Constrained by: 
+                      Constrains: None
+                      Related to: None
+                 Only visible if: ylim_source:manual
+
+Parameter: color_source@lcfig01@figure
+                       Qualifier: color_source
+                     Description: Source to use for color.  For manual, see the c parameter in the figure context.  Otherwise, see the c parameters tagged with the corresponding dataset/model/component.
+                           Value: model
+                         Choices: dataset, model, component, manual
+                  Constrained by: 
+                      Constrains: None
+                      Related to: None
+
+Parameter: color@lcfig01@figure
+                       Qualifier: color
+                     Description: Default color when plotted via run_figure
+                           Value: black
+                         Choices: black, blue, orange, green, red, purple, ping, pink, yellow
+                  Constrained by: 
+                      Constrains: None
+                      Related to: None
+                 Only visible if: color_source:manual
+
+Parameter: marker_source@lcfig01@figure
+                       Qualifier: marker_source
+                     Description: Source to use for marker (datasets only, not models).  For manual, see the marker parameter in the figure context.  Otherwise, see the marker parameters tagged with the corresponding dataset/model/component.
+                           Value: manual
+                         Choices: dataset, component, manual
+                  Constrained by: 
+                      Constrains: None
+                      Related to: None
+
+Parameter: marker@lcfig01@figure
+                       Qualifier: marker
+                     Description: Default marker (datasets only, not models) when plotted via run_figure
+                           Value: .
+                         Choices: None, ., o, +, s, *, x, v, ^, <, >, p, h, o, D
+                  Constrained by: 
+                      Constrains: None
+                      Related to: None
+                 Only visible if: marker_source:manual
+
+Parameter: linestyle_source@lcfig01@figure
+                       Qualifier: linestyle_source
+                     Description: Source to use for linestyle.  For manual, see the linestyle parameter in the figure context.  Otherwise, see the linestyle parameters tagged with the corresponding dataset/model/component.
+                           Value: manual
+                         Choices: dataset, model, component, manual
+                  Constrained by: 
+                      Constrains: None
+                      Related to: None
+
+Parameter: linestyle@lcfig01@figure
+                       Qualifier: linestyle
+                     Description: Default linestyle when plotted via run_figure
+                           Value: solid
+                         Choices: None, solid, dashed, dotted, dashdot
+                  Constrained by: 
+                      Constrains: None
+                      Related to: None
+                 Only visible if: linestyle_source:manual
+
+Parameter: legend@lcfig01@figure
+                       Qualifier: legend
+                     Description: Whether to draw the legend
+                           Value: True
+                  Constrained by: 
+                      Constrains: None
+                      Related to: None
+
+Parameter: uncover@lcfig01@figure
+                       Qualifier: uncover
+                     Description: Whether to uncover up to the current time(s) (see times_source and times parameters).
+                           Value: False
+                  Constrained by: 
+                      Constrains: None
+                      Related to: None
+
+Parameter: highlight@lcfig01@figure
+                       Qualifier: highlight
+                     Description: Whether to higlight the current time(s) (see times_source and times parameters).
+                           Value: True
+                  Constrained by: 
+                      Constrains: None
+                      Related to: None
+
+Parameter: time_source@lcfig01@figure
+                       Qualifier: time_source
+                     Description: Source to use for highlight/uncover time for this individual figure (or set to default to respect the default_time_source parameter).
+                           Value: default
+                         Choices: None, default, manual, t0_perpass@binary, t0_supconj@binary, t0_ref@binary, t0@system
+                  Constrained by: 
+                      Constrains: None
+                      Related to: None
+
+Parameter: time@lcfig01@figure
+                       Qualifier: time
+                     Description: Times to use for highlighting/uncovering if time_source=manual.
+                           Value: 0.0 d
+                  Constrained by: 
+                      Constrains: None
+                      Related to: None
+                 Only visible if: time_source:manual
+
+Parameter: times@default@model
+                       Qualifier: times
+                     Description: Model (synthetic) times
+                           Value: [2460257.         2466265.51401954 2472274.02803907 ...
+ 8450745.47747693 8456753.99149646 8462762.505516  ] d
+                  Constrained by: 
+                      Constrains: None
+                      Related to: None
+
+Parameter: fluxes@default@model
+                       Qualifier: fluxes
+                     Description: Model (synthetic) flux
+                           Value: [1.11815837 0.82200231 1.0111771  ... 1.12071522 0.91956241
+ 0.92868997] W / m2
+                  Constrained by: 
+                      Constrains: None
+                      Related to: None
+
+Parameter: comments@default@model
+                       Qualifier: comments
+                     Description: User-provided comments for this model.  Feel free to place any notes here.
+                           Value: 
+                  Constrained by: 
+                      Constrains: None
+                      Related to: None
+
+Parameter: color@default@figure
+                       Qualifier: color
+                     Description: Color to use for figures in which color_source is set to model
+                           Value: blue
+                         Choices: black, blue, orange, green, red, purple, ping, pink, yellow
+                  Constrained by: 
+                      Constrains: None
+                      Related to: None
+
+Parameter: linestyle@default@figure
+                       Qualifier: linestyle
+                     Description: Linestyle to use for figures in which linestyle_source is set to model
+                           Value: solid
+                         Choices: None, solid, dashed, dotted, dashdot
+                  Constrained by: 
+                      Constrains: None
+                      Related to: None
+
+--
+ParameterSet: 0 parameters
+NO PARAMETERS
+---
+{'_bundle': <PHOEBE Bundle: 193 parameters | contexts: setting, system, component, dataset, model, compute, constraint, figure>, '_filter': {}, '_params': [], '_qualifier': None, '_time': None, '_component': None, '_dataset': None, '_figure': None, '_server': None, '_constraint': None, '_distribution': None, '_compute': None, '_model': None, '_solver': None, '_solution': None, '_kind': None, '_context': None, '_next_field': 'time', '_feature': None}
